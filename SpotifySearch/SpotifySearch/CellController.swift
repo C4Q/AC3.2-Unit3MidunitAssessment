@@ -42,7 +42,7 @@ class CellController: UITableViewController {
         
         // Configure the cell...
         
-        cell.textLabel?.text = thisCellsAlbum?.title // this calls up the main text label -- in this case, the one named title in the storyboard. we may think we're "creating" the label but it's already waiting for us. this is more clear when we use a basic or detail cell style. we just don't have to create an outlet for it using control-drag, which is a little confusing
+        cell.textLabel?.text = /*"ASDsccsdcw"*/ thisCellsAlbum?.title // this calls up the main text label -- in this case, the one named title in the storyboard. we may think we're "creating" the label but it's already waiting for us. this is more clear when we use a basic or detail cell style. we just don't have to create an outlet for it using control-drag, which is a little confusing
         // cell.detailTextLabel?.text = thisCAlbum.???? // convert this into image
         
         // Styling
@@ -55,14 +55,32 @@ class CellController: UITableViewController {
 
  
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
+        if segue.identifier == "showArt",
+            let goHere = segue.destination as? AlbumArtController,
         // Pass the selected object to the new view controller.
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell) {
+                let albumUserPicked = self.albumArr?[indexPath.row]
+                goHere.chosenAlbum = albumUserPicked
+            }
     }
-    */
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destinationViewController.
+//        if segue.identifier == "episodeSegue",
+//            let destination = segue.destination as? EpisodeDeetsController,
+//            // Pass the selected object to the new view controller.
+//            let cell = sender as? UITableViewCell,
+//            let ip = tableView.indexPath(for: cell) {
+//            let ep = self.episodes[ip.row]
+//            destination.chosenEpisode = ep
+//        }
+//    }
 
 }
