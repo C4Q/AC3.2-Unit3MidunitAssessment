@@ -97,7 +97,7 @@ class SpotifyTableViewController: UITableViewController {
 
         let row = kaskade[indexPath.row]
         cell.textLabel?.text = row.artistName
-        cell.detailTextLabel?.text = row.albumName
+        cell.detailTextLabel?.text = "Album: \(row.albumName)"
         
         cell.imageView?.image = nil
         
@@ -105,7 +105,7 @@ class SpotifyTableViewController: UITableViewController {
             DispatchQueue.main.async {
                 if let d = data {
                     cell.imageView?.image = UIImage(data: d)
-                    cell.setNeedsDisplay()
+                    cell.setNeedsLayout()
                 }
             }
         }

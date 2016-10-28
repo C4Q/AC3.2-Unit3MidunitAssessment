@@ -9,7 +9,7 @@
         <!--Album-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Album" id="BYZ-38-t0r" customClass="SpotifyViewController" sceneMemberID="viewController">
+                <viewController title="Album" id="BYZ-38-t0r" customClass="SpotifyViewController" customModule="SpotifySearch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,8 +20,8 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZS9-kf-sTA">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="325" id="RjT-W2-lwa"/>
-                                    <constraint firstAttribute="width" constant="325" id="iAM-a3-5Ep"/>
+                                    <constraint firstAttribute="height" constant="350" id="RjT-W2-lwa"/>
+                                    <constraint firstAttribute="width" constant="350" id="iAM-a3-5Ep"/>
                                 </constraints>
                             </imageView>
                         </subviews>
