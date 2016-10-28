@@ -12,21 +12,29 @@ class AlbumsTableViewController: UITableViewController {
     
     var albums = [Album]()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadTableViewData()
+        
+        //couldn't get this pull down refresh to work so did it with a button
+        self.refreshControl?.addTarget(self, action: #selector(refreshRequested(_:)), for: .valueChanged)
+    }
+    
+    func refreshRequested(_ sender: UIRefreshControl) {
         loadTableViewData()
     }
 
     func loadTableViewData() {
-        APIHelper.manager.getData(endPoint: APIHelper.manager.endPoint) { (data: Data?) in
+        navigationItem.title = SearchManager.manager.searcWord
+        let myEndpoint = SearchManager.manager.searchString
+        APIHelper.manager.getData(endPoint: myEndpoint) { (data: Data?) in
             guard let unwrappedData = data else { return }
             self.albums = Album.buildAlbumArray(from: unwrappedData)!
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.refreshControl?.endRefreshing()
             }
-
         }
     }
     
@@ -54,7 +62,6 @@ class AlbumsTableViewController: UITableViewController {
                 cell.setNeedsLayout()
             }
         }
-
         return cell
     }
     
@@ -69,10 +76,12 @@ class AlbumsTableViewController: UITableViewController {
                 destiationVC.thisAlbum = sender as? Album
             }
         }
-        
-
     }
     
-
-
+    
+    @IBAction func refreshPressed(_ sender: UIButton) {
+        loadTableViewData()
+    }
+    
+    
 }

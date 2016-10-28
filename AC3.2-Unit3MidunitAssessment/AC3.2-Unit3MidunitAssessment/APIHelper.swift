@@ -13,10 +13,6 @@ class APIHelper {
     static let manager = APIHelper()
     private init() {}
     
-    let searchWord = "banana"
-    
-    let endPoint = "https://api.spotify.com/v1/search?q=man&type=album&limit=50"
-    
     func getData(endPoint: String, callback: @escaping (Data?)->Void) {
         guard let myURL = URL(string: endPoint) else { return }
         let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -41,6 +37,5 @@ class APIHelper {
             
             }.resume()
     }
-    
 }
 

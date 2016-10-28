@@ -15,6 +15,8 @@
 		DE5C081B1DC39CA400CC1D84 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C081A1DC39CA400CC1D84 /* Album.swift */; };
 		DE5C081D1DC39E9F00CC1D84 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C081C1DC39E9F00CC1D84 /* APIHelper.swift */; };
 		DE5C081F1DC3A8EA00CC1D84 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C081E1DC3A8EA00CC1D84 /* AlbumDetailViewController.swift */; };
+		DE5C08211DC3B5EF00CC1D84 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C08201DC3B5EF00CC1D84 /* SearchManager.swift */; };
+		DE5C08231DC3B73B00CC1D84 /* SearchSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C08221DC3B73B00CC1D84 /* SearchSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		DE5C081A1DC39CA400CC1D84 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		DE5C081C1DC39E9F00CC1D84 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		DE5C081E1DC3A8EA00CC1D84 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		DE5C08201DC3B5EF00CC1D84 /* SearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		DE5C08221DC3B73B00CC1D84 /* SearchSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				DE5C081E1DC3A8EA00CC1D84 /* AlbumDetailViewController.swift */,
 				DE5C081A1DC39CA400CC1D84 /* Album.swift */,
 				DE5C081C1DC39E9F00CC1D84 /* APIHelper.swift */,
+				DE5C08201DC3B5EF00CC1D84 /* SearchManager.swift */,
+				DE5C08221DC3B73B00CC1D84 /* SearchSettingsViewController.swift */,
 				DE5C08061DC39B5300CC1D84 /* AppDelegate.swift */,
 				DE5C080A1DC39B5300CC1D84 /* Main.storyboard */,
 				DE5C080D1DC39B5300CC1D84 /* Assets.xcassets */,
@@ -148,6 +154,8 @@
 				DE5C081D1DC39E9F00CC1D84 /* APIHelper.swift in Sources */,
 				DE5C08071DC39B5300CC1D84 /* AppDelegate.swift in Sources */,
 				DE5C081F1DC3A8EA00CC1D84 /* AlbumDetailViewController.swift in Sources */,
+				DE5C08211DC3B5EF00CC1D84 /* SearchManager.swift in Sources */,
+				DE5C08231DC3B73B00CC1D84 /* SearchSettingsViewController.swift in Sources */,
 				DE5C08191DC39BFA00CC1D84 /* AlbumsTableViewController.swift in Sources */,
 				DE5C081B1DC39CA400CC1D84 /* Album.swift in Sources */,
 			);
