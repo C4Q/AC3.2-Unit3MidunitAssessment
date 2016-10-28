@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class AlbumFactory {
+    static let RCA: AlbumFactory = AlbumFactory()
+    
+    private init() {}
+}

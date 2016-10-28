@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct Albums {
+    var title: String
+    var cover: URL
+}
