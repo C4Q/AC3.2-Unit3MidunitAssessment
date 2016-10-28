@@ -17,7 +17,7 @@ class AlbumArtController: UIViewController {
         super.viewDidLoad()
         
         self.title = chosenAlbum?.title
-        //self.albumArt = chosenAlbum?.cover
+        //self.albumArt = chosenAlbum?.cover 
         loadImage((chosenAlbum?.cover)!)
     }
     
