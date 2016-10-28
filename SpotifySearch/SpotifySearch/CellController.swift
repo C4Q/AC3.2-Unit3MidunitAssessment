@@ -15,6 +15,9 @@ class CellController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Albums"
+        
         AlbumFactory.RCA.getData {(data: Data?) in
             dump(self.albumArr)
         }
