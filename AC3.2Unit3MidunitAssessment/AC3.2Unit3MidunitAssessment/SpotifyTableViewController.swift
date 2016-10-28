@@ -15,7 +15,7 @@ class SpotifyTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SpotifyManager.manager.getAlbumData { (data: Data?) in
+        SpotifyManager.manager.getAlbumData(album: "jazz") {  (data: Data?) in
             if data != nil {
                 
                 if let album = Album.getAlbum(from: data!) {
@@ -29,8 +29,10 @@ class SpotifyTableViewController: UITableViewController {
                 //dump(data)
             }
         }
-        self.title = "Albums"
+        
+        
     }
+    //Get specific image from array of albumimages
     /*
     func getImage() -> [String] {
         var picArr = [String]()
@@ -69,25 +71,13 @@ class SpotifyTableViewController: UITableViewController {
             return albumCell
         }
         
-        //Get specific image from array of albumimages
-        /*
-        var picArr = [String]()
-        for image in self.albums[indexPath.row].albumArrayImages {
-            if Int(image["height"]!)! < 70 {
-                picArr.append(image["url"]!)
-            } else if Int(image["height"]!)! < 500 && Int(image["height"]!)! > 70 {
-                picArr.append(image["url"]!)
-            }
-        }
-         */
         
+     
         
         
         // Configure the cell...
-        
+        //cell.imageView?.image =
         cell.textLabel?.text = selectedCell.albumTitle
-        
-        
         return cell
     }
     

@@ -11,10 +11,11 @@ import Foundation
 internal struct Album {
     internal let albumTitle: String
     internal let albumArrayImages: [[String:String]]
-    internal let albumThumbnailURLString: String = "blah"
-    internal let albumFullImageURLString: String = "blah"
+    internal let albumThumbnailURLString: String = ""
+    internal let albumFullImageURLString: String = ""
     
-    //static?
+    
+    //String:[String:AnyObject]?
     static func getAlbum(from data: Data) -> [Album]? {
         do {
             let albumJSONData: Any = try JSONSerialization.jsonObject(with: data, options: [])
