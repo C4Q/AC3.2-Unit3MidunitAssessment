@@ -30,24 +30,6 @@ class AlbumFactory {
         print("It's over!")
     }
     
-//    internal func getAlbums(from jsonData: Data) -> [Albums]? {
-//        
-//        do {
-//            let jSONData: Any = try JSONSerialization.jsonObject(with: jsonData, options: [])
-//            
-//            // Cast from Any and check for the "albums" key
-//            guard let jSONCasted: [String : AnyObject] = jSONData as? [String : AnyObject],
-//                let levelOne: [AnyObject] = jSONCasted["albums"] as? [AnyObject] else {
-//                    return nil
-//            }
-//            
-//        catch let error as NSError {
-//            print("Error occurred while parsing data: \(error.localizedDescription)")
-//        }
-//        
-//        return  nil
-//        }
-//    
 ////    func getInstaCatsTwo(from apiEndpoint: String, callback:@escaping ([InstaCat]?)->()) {
 ////        if let validInstaCatEndpoint: URL = URL(string: apiEndpoint) {
 ////            let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -66,5 +48,4 @@ class AlbumFactory {
 ////                }.resume()
 ////        }
 ////    }
-
 }

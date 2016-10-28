@@ -61,7 +61,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pnl-Zn-xsJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pnl-Zn-xsJ" userLabel="coverArt">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Pnl-Zn-xsJ" secondAttribute="height" multiplier="343:575" id="cFL-Jz-GFs"/>
                                 </constraints>
@@ -75,6 +75,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pnl-Zn-xsJ" secondAttribute="bottom" constant="20" id="pEg-nB-Ktd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumArt" destination="Pnl-Zn-xsJ" id="lAn-vq-R71"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

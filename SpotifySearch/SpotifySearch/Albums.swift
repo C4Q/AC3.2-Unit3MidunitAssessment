@@ -19,7 +19,7 @@ struct Albums {
     }
     
     init?(withDict dict: [String:Any]) {
-        if let title = dict["name"] as? String,
+        if let title = dict["name"] as? String, //oh shit there are two keys that are called name. better be careful when parsing
             let coverImgAddress = dict["images"] as? String,
             let cover: URL = URL(string: coverImgAddress) {
 

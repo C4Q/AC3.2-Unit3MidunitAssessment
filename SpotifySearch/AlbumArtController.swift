@@ -11,11 +11,14 @@ import UIKit
 class AlbumArtController: UIViewController {
 
     var chosenAlbum: Albums?
+    @IBOutlet weak var albumArt: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = chosenAlbum?.title
+        //self.albumArt = chosenAlbum?.cover
+        load_image((chosenAlbum?.cover)!)
     }
     
 
@@ -29,4 +32,15 @@ class AlbumArtController: UIViewController {
     }
     */
 
+    func load_image(_ url: URL) {
+        let request: NSURLRequest = NSURLRequest(url: url)
+        NSURLConnection.sendAsynchronousRequest(
+            request as URLRequest, queue: OperationQueue.main,
+            completionHandler: {(response: URLResponse?,data: Data?,error: Error?) -> Void in
+                if error == nil {
+                    self.albumArt.image = UIImage(data: data!)
+                }
+        })
+        
+    }
 }
