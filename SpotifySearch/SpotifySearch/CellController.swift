@@ -16,7 +16,7 @@ class CellController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Albums"
+        self.title = "Albums"//we need to alter this to represent the search term from the URL in something resembling English...we could be a punk and hardcode it but that would not be sporting
         
         AlbumFactory.RCA.getData {(data: Data?) in
             dump(self.albumArr)

@@ -15,7 +15,7 @@ class AlbumArtController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Album" //ideally this would be a variable that contains the albums name and title
+        self.title = chosenAlbum?.title
     }
     
 
