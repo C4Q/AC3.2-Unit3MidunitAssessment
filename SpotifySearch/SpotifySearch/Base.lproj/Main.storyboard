@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6rt-W8-azq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Spotify Search Table View Controller-->
+        <scene sceneID="coH-Cf-Eg6">
+            <objects>
+                <tableViewController id="Ilm-jO-dRx" customClass="SpotifySearchTableViewController" customModule="SpotifySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yFl-tN-G6V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumCellIdentifier" id="Odi-ye-Aty">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Odi-ye-Aty" id="urf-XT-cH6">
+                                    <frame key="frameInset" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ilm-jO-dRx" id="hNB-d4-ieU"/>
+                            <outlet property="delegate" destination="Ilm-jO-dRx" id="6lh-Sl-p1x"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="eON-CZ-GGj"/>
+                    <connections>
+                        <segue destination="a8e-x5-2WP" kind="show" identifier="detailAlbumViewSegue" id="uKu-wn-Yld"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pmt-d0-xYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="-24.7376311844078"/>
+        </scene>
+        <!--Detail Album View Controller-->
+        <scene sceneID="7wW-C1-j26">
+            <objects>
+                <viewController id="a8e-x5-2WP" customClass="DetailAlbumViewController" customModule="SpotifySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b4X-fC-1hq"/>
+                        <viewControllerLayoutGuide type="bottom" id="mLz-qI-K5e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xBp-sB-DtX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="STh-RD-ZtU">
+                                <frame key="frameInset" minX="37" minY="100" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageLargeImageView" destination="STh-RD-ZtU" id="GFU-Dc-mds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ib-ix-c3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2799.1999999999998" y="-26.53673163418291"/>
+        </scene>
+        <!--Blue-->
+        <scene sceneID="6Nb-tG-zBi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CWY-j4-dvb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Blue" id="3O1-hd-NDX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GlU-vX-LLN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ilm-jO-dRx" kind="relationship" relationship="rootViewController" id="FCe-bF-2YL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsr-Hi-DRH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="-25.637181409295355"/>
+        </scene>
+        <!--Pop Table View Controller-->
+        <scene sceneID="KCD-rf-vrs">
+            <objects>
+                <tableViewController id="PLe-yl-Mur" customClass="KPopTableViewController" customModule="SpotifySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jfE-Bi-aSn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kpopCellIdentifier" id="SpT-hl-g1z">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SpT-hl-g1z" id="uNo-AF-3uv">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PLe-yl-Mur" id="cX6-b6-6sU"/>
+                            <outlet property="delegate" destination="PLe-yl-Mur" id="wrd-Nx-yan"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="tA2-dC-N9K"/>
+                    <connections>
+                        <segue destination="Cae-oR-wcF" kind="show" identifier="KPopDetailViewSegue" id="LpT-pE-1dk"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbW-d2-Dx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="678"/>
+        </scene>
+        <!--Pop Detail View Controller-->
+        <scene sceneID="AEX-cr-Lje">
+            <objects>
+                <viewController id="Cae-oR-wcF" customClass="KPopDetailViewController" customModule="SpotifySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UNE-VU-WuU"/>
+                        <viewControllerLayoutGuide type="bottom" id="hcC-lJ-jXG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="utR-BL-WiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhU-Vf-rZz">
+                                <frame key="frameInset" minX="37" minY="95" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageLargeImageView" destination="mhU-Vf-rZz" id="eq8-95-aRx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNq-F6-p2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="678"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OC1-hg-S0N">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6rt-W8-azq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="2eW-6f-z7Q">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CWY-j4-dvb" kind="relationship" relationship="viewControllers" id="uem-F9-08o"/>
+                        <segue destination="c4C-Qi-oST" kind="relationship" relationship="viewControllers" id="6LJ-TM-7Vb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nB-9Z-qWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248.80000000000001" y="-25.637181409295355"/>
+        </scene>
+        <!--KPop-->
+        <scene sceneID="xw3-Sp-SvF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c4C-Qi-oST" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="KPop" id="J44-Wu-cgY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Alg-PW-sp2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PLe-yl-Mur" kind="relationship" relationship="rootViewController" id="60w-AQ-mki"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rcj-RP-7g9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="678"/>
+        </scene>
+    </scenes>
+</document>
