@@ -10,13 +10,14 @@ import UIKit
 
 class CellController: UITableViewController {
 
+    var ourUnformattedURL: String = "https://api.spotify.com/v1/search?q=swift&type=album&limit=50"
     var albumArr: [Albums]? = [Albums]()
     var chosenAlbum: Albums?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Albums"//we need to alter this to represent the search term from the URL in something resembling English...we could be a punk and hardcode it but that would not be sporting
+        self.title = "Albums"//we need to alter this to represent the search term from the URL in something resembling English...we could be a punk and hardcode it to Blue but that would not be sporting
         
         AlbumFactory.RCA.getData {(data: Data?) in
             dump(self.albumArr)
@@ -51,11 +52,7 @@ class CellController: UITableViewController {
 
         return cell
     }
- 
-
- 
-
-
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
