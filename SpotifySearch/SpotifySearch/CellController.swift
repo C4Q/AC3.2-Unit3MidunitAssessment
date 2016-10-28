@@ -25,7 +25,7 @@ class CellController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return albumArr!.count //problems binding [Albums]...
+        return albumArr!.count //problems binding [Albums]...so we're forcing it. Bad.
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
