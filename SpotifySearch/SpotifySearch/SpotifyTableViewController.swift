@@ -17,7 +17,6 @@ class SpotifyTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadAlbums()
-		
 	}
 	
 	internal func loadAlbums() {
@@ -43,25 +42,23 @@ class SpotifyTableViewController: UITableViewController {
 		for album in albums {
 			artistDict[album.artistName] = 1
 		}
-		print("Artist dict: \(artistDict.count)")
+		
 		artistArray = Array(artistDict.keys).sorted { $0 < $1 }
-		print("\n\n\nArtist Array: \(artistArray)")
+		print("\n\n\nArtist dict: \(artistDict.count)")
+		print("\nArtist Array: \(artistArray)")
 	}
 	
 	// MARK: - Table view data source
 	
 	override func numberOfSections(in tableView: UITableView) -> Int {
-		// #warning Incomplete implementation, return the number of sections
-		print("\n\n\nArtist Count: \(artistArray.count)")
+		print("\nArtist Count: \(artistArray.count)")
 		return artistArray.count
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		// #warning Incomplete implementation, return the number of rows
 		let albumsByArtist = albums.filter { (album) -> Bool in
 			(album.artistName) == artistArray[section]
 		}
-		print("sections count = \(section)")
 		return albumsByArtist.count
 	}
 	
@@ -76,11 +73,8 @@ class SpotifyTableViewController: UITableViewController {
 			(album.artistName) == artistArray[indexPath.section]
 		}
 		
-		let albumAtRow = albumsByArtist[indexPath.row]
-		
-		
-		
-//		let albumAtRow = albums.sorted(by: { $0.artistName < $1.artistName })/*.sorted(by: { $0.albumName < $1.albumName })*/ [indexPath.row]
+		let albumAtRow = albumsByArtist.sorted() { $0.albumName < $1.albumName } [indexPath.row]
+
 		var image: UIImage?
 		var data: Data?
 		
@@ -104,10 +98,8 @@ class SpotifyTableViewController: UITableViewController {
 		return cell
 	}
 	
-	
 	// MARK: - Navigation
 	
-	// In a storyboard-based application, you will often want to do a little preparation before navigation
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if let tappedAlbumCell: UITableViewCell = sender as? UITableViewCell {
 			if segue.identifier == "albumSegue" {
@@ -116,9 +108,13 @@ class SpotifyTableViewController: UITableViewController {
 				
 				let cellIndexPath: IndexPath = self.tableView.indexPath(for: tappedAlbumCell)!
 				
-				let sorted = albums.sorted(by: { $0.albumName < $1.albumName }) [cellIndexPath.row]
+				let albumsByArtist = albums.filter { (album) -> Bool in
+					(album.artistName) == artistArray[cellIndexPath.section]
+				}
 				
-				detailedImage.albumSelected = sorted
+				let albumAtRow = albumsByArtist.sorted() { $0.albumName < $1.albumName } [cellIndexPath.row]
+			
+				detailedImage.albumSelected = albumAtRow
 			}
 		}
 	}
