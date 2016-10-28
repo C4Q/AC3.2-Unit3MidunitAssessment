@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PvW-cd-cLm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Spotify Table View Controller-->
+        <scene sceneID="NUr-b6-aoo">
+            <objects>
+                <tableViewController id="5a4-bt-fbY" customClass="SpotifyTableViewController" customModule="SpotifySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tHL-M7-GMH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchResult" textLabel="Faz-06-xUn" style="IBUITableViewCellStyleDefault" id="AtZ-Xw-M0v">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AtZ-Xw-M0v" id="Bq9-6n-Nvd">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Faz-06-xUn">
+                                            <frame key="frameInset" minX="15" width="345" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5a4-bt-fbY" id="zGe-5x-JrR"/>
+                            <outlet property="delegate" destination="5a4-bt-fbY" id="SAr-rH-jfb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="eji-9N-0cV"/>
+                    <connections>
+                        <segue destination="AEV-CL-pIf" kind="show" identifier="showAlbumArt" id="0m7-1K-FEj"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWQ-kP-kY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149.5999999999999" y="20.239880059970016"/>
+        </scene>
+        <!--Spotify Details View Controller-->
+        <scene sceneID="xV8-jM-0SL">
+            <objects>
+                <viewController id="AEV-CL-pIf" customClass="SpotifyDetailsViewController" customModule="SpotifySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1cR-LC-UcU"/>
+                        <viewControllerLayoutGuide type="bottom" id="XSa-vc-Ach"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hzW-6u-agX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rf4-I4-hzf"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rf4-I4-hzf" secondAttribute="trailing" constant="20" id="4Dc-8W-ohU"/>
+                            <constraint firstItem="XSa-vc-Ach" firstAttribute="top" secondItem="rf4-I4-hzf" secondAttribute="bottom" constant="155" id="Ka3-bo-wpG"/>
+                            <constraint firstItem="rf4-I4-hzf" firstAttribute="leading" secondItem="hzW-6u-agX" secondAttribute="leadingMargin" constant="20" id="VdO-mu-NxF"/>
+                            <constraint firstItem="rf4-I4-hzf" firstAttribute="top" secondItem="1cR-LC-UcU" secondAttribute="bottom" constant="135" id="WD8-y4-RHR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rf4-I4-hzf" secondAttribute="trailing" constant="20" id="iXp-2Z-u2U"/>
+                            <constraint firstItem="rf4-I4-hzf" firstAttribute="leading" secondItem="hzW-6u-agX" secondAttribute="leadingMargin" constant="20" id="mEa-6g-WVE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VTb-id-RMA"/>
+                    <connections>
+                        <outlet property="albumArtView" destination="rf4-I4-hzf" id="Qdo-Xm-8ST"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8D-rk-zIJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="19.340329835082461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="otY-Ah-VKt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PvW-cd-cLm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yel-WZ-v3y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5a4-bt-fbY" kind="relationship" relationship="rootViewController" id="TL0-MI-OdD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55k-fW-QKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210.40000000000001" y="20.239880059970016"/>
+        </scene>
+    </scenes>
+</document>
