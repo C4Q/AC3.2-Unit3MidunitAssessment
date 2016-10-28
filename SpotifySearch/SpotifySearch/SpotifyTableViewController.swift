@@ -11,10 +11,13 @@ import UIKit
 class SpotifyTableViewController: UITableViewController {
 	
 	var albums = [SpotifyAlbum]()
+	var artistDict = [String : Int]()
+	var artistArray = [String]()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadAlbums()
+		
 	}
 	
 	internal func loadAlbums() {
@@ -26,6 +29,8 @@ class SpotifyTableViewController: UITableViewController {
 					
 					self.albums = albums
 					
+					self.countArtists()
+					
 					DispatchQueue.main.async {
 						self.tableView.reloadData()
 					}
@@ -34,22 +39,48 @@ class SpotifyTableViewController: UITableViewController {
 		}
 	}
 	
+	func countArtists() {
+		for album in albums {
+			artistDict[album.artistName] = 1
+		}
+		print("Artist dict: \(artistDict.count)")
+		artistArray = Array(artistDict.keys).sorted { $0 < $1 }
+		print("\n\n\nArtist Array: \(artistArray)")
+	}
+	
 	// MARK: - Table view data source
 	
 	override func numberOfSections(in tableView: UITableView) -> Int {
 		// #warning Incomplete implementation, return the number of sections
-		return 1
+		print("\n\n\nArtist Count: \(artistArray.count)")
+		return artistArray.count
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		// #warning Incomplete implementation, return the number of rows
-		return albums.count
+		let albumsByArtist = albums.filter { (album) -> Bool in
+			(album.artistName) == artistArray[section]
+		}
+		print("sections count = \(section)")
+		return albumsByArtist.count
 	}
 	
+	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		return "\(artistArray[section])"
+	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "albumCell", for: indexPath)
-		let albumAtRow = albums[indexPath.row]
+		
+		let albumsByArtist = albums.filter { (album) -> Bool in
+			(album.artistName) == artistArray[indexPath.section]
+		}
+		
+		let albumAtRow = albumsByArtist[indexPath.row]
+		
+		
+		
+//		let albumAtRow = albums.sorted(by: { $0.artistName < $1.artistName })/*.sorted(by: { $0.albumName < $1.albumName })*/ [indexPath.row]
 		var image: UIImage?
 		var data: Data?
 		
@@ -67,8 +98,8 @@ class SpotifyTableViewController: UITableViewController {
 		}
 		
 		cell.textLabel?.text = albumAtRow.albumName
+		cell.detailTextLabel?.text = albumAtRow.artistName
 		cell.imageView?.image = image
-		cell.detailTextLabel?.text = nil
 		
 		return cell
 	}
@@ -85,7 +116,9 @@ class SpotifyTableViewController: UITableViewController {
 				
 				let cellIndexPath: IndexPath = self.tableView.indexPath(for: tappedAlbumCell)!
 				
-				detailedImage.albumSelected = albums[cellIndexPath.row]
+				let sorted = albums.sorted(by: { $0.albumName < $1.albumName }) [cellIndexPath.row]
+				
+				detailedImage.albumSelected = sorted
 			}
 		}
 	}

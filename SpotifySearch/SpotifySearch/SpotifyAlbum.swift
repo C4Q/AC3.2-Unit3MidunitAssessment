@@ -9,11 +9,12 @@
 import Foundation
 
 internal enum AlbumModelParseError: Error {
-	case results, album, image, imageBig, imageThumb
+	case results, artist, album, image, imageBig, imageThumb
 }
 
 internal struct SpotifyAlbum {
 	
+	let artistName: String
 	let albumName: String
 	let imageURL: String
 	let thumbURL: String
@@ -42,13 +43,19 @@ internal struct SpotifyAlbum {
 						throw AlbumModelParseError.album
 				}
 				
+				// 4.5 parse out artist name
+				guard let artist: [[String : Any]] = albumResult["artists"] as? [[String : Any]],
+					let artistName: String = artist[0]["name"] as? String
+					else {
+						throw AlbumModelParseError.artist
+				}
+				
 				
 				// 5. parse out image and thumbnail URLs
 				guard let images: [[String : Any]] = albumResult["images"] as? [[String : Any]]
 					else {
 						throw AlbumModelParseError.image
 				}
-				
 				
 				guard let imageURL: String = images[0]["url"] as? String
 					else {
@@ -60,7 +67,8 @@ internal struct SpotifyAlbum {
 						throw AlbumModelParseError.imageThumb
 				}
 				
-				let validAlbum: SpotifyAlbum = SpotifyAlbum(albumName: albumName,
+				let validAlbum: SpotifyAlbum = SpotifyAlbum(artistName: artistName,
+				                                            albumName: albumName,
 				                                            imageURL: imageURL,
 				                                            thumbURL: thumbURL)
 				

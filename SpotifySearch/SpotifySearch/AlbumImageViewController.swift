@@ -9,16 +9,16 @@
 import UIKit
 
 class AlbumImageViewController: UIViewController {
-
+	
 	var albumSelected: SpotifyAlbum!
 	
 	@IBOutlet weak var albumImage: UIImageView!
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		loadData()
-    }
-    
+	}
+	
 	func loadData() {
 		var image: UIImage?
 		var data: Data?
