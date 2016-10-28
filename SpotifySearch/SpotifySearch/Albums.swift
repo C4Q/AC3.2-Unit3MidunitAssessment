@@ -11,7 +11,7 @@ import Foundation
 struct Albums {
     var title: String
     //var cover: (URL, URL) //ideally, we'd like to grab the biggest img for the album art view and the smallest img for the table view but let's just get one img for now
-    var cover: URL
+    var cover: URL //we could make loading the image a lot easier if we could have this be a UIImage but assigning it that type gives errors
     
     init(title: String, cover: URL) { //, URL)) {
         self.title = title

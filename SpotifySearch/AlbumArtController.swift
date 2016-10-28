@@ -18,7 +18,7 @@ class AlbumArtController: UIViewController {
         
         self.title = chosenAlbum?.title
         //self.albumArt = chosenAlbum?.cover
-        load_image((chosenAlbum?.cover)!)
+        loadImage((chosenAlbum?.cover)!)
     }
     
 
@@ -32,7 +32,7 @@ class AlbumArtController: UIViewController {
     }
     */
 
-    func load_image(_ url: URL) {
+    func loadImage(_ url: URL) {
         let request: NSURLRequest = NSURLRequest(url: url)
         NSURLConnection.sendAsynchronousRequest(
             request as URLRequest, queue: OperationQueue.main,

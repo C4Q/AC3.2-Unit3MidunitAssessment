@@ -12,6 +12,7 @@ class AlbumFactory {
     static let RCA: AlbumFactory = AlbumFactory()
     private init() {}
     
+    
     func getData(completion: @escaping((Data?)->Void)) {
         guard let url = URL(string: "https://api.spotify.com/v1/search?q=swift&type=album&limit=50") else {return}
         // 1. URLSession/Configuration
@@ -30,22 +31,58 @@ class AlbumFactory {
         print("It's over!")
     }
     
-////    func getInstaCatsTwo(from apiEndpoint: String, callback:@escaping ([InstaCat]?)->()) {
-////        if let validInstaCatEndpoint: URL = URL(string: apiEndpoint) {
-////            let session = URLSession(configuration: URLSessionConfiguration.default)
-////            session.dataTask(with: validInstaCatEndpoint) { (data: Data?, response: URLResponse?, error: Error?) in
-////                if error != nil {
-////                    print("Error encountered!: \(error!)")
-////                }
-////                if let validData: Data = data {
-////                    if let allTheCats = InstaCatFactory.manager.getInstaCats(from: validData) {
-////                        callback(allTheCats)
-////                        if error != nil {
-////                            print("Error encountered!: \(error!)")
-////                        }
-////                    }
-////                }
-////                }.resume()
-////        }
-////    }
+    internal func parseAlbums(from jsonData: Data) -> [Albums]? {
+        
+        do {
+            let albumJSON: Any = try JSONSerialization.jsonObject(with: jsonData, options: [])
+            
+            // Cast from Any and check for the "albums" key
+            guard let albumJSONCasted: [String : AnyObject] = albumJSON as? [String : AnyObject],
+                let albumStash: [AnyObject] = albumJSONCasted["albums"] as? [AnyObject] else {
+                    return nil
+            }
+            throw error {}
+            
+            // lots of bad stuff in here. can we use the init we designed to run using a dictionary here?
+//            var tempArr: [Albums] = []
+//            tempArr.forEach({ albumObject in
+//                guard let title: String = albumObject["name"] as? String,
+//                    let albumCover: String = albumObject["cover"] as? String,
+//                    
+//                    // Some of these values need further casting
+//                    else {
+//                        return
+//                }
+//                
+//                // append to our temp array
+//                tempArr.append(Albums(title: albumName, cover: albumCover))
+//            })
+//            
+//            return [Albums]
+//        }
+        catch let error as NSError {
+            print("Error occurred while parsing data: \(error.localizedDescription)")
+        }
+        
+        return  nil
+    }
+    
+    func getAlbums(from apiEndpoint: String, callback:@escaping ([Albums]?)->()) {
+        if let validEndpoint: URL = URL(string: apiEndpoint) {
+            let session = URLSession(configuration: URLSessionConfiguration.default)
+            session.dataTask(with: validEndpoint) { (data: Data?, response: URLResponse?, error: Error?) in
+                if error != nil {
+                    print("Error encountered!: \(error!)")
+                }
+                if let validData: Data = data {
+                    if let allTheThings = AlbumFactory.RCA.parseAlbums(from: validData) {
+                        callback(allTheThings)
+                        if error != nil {
+                            print("Error encountered!: \(error!)")
+                        }
+                    }
+                }
+                }.resume()
+        }
+    }
 }
