@@ -15,7 +15,9 @@ class CellController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dump(albumArr)
+        AlbumFactory.RCA.getData {(data: Data?) in
+            dump(self.albumArr)
+        }
     }
 
     // MARK: - Table view data source
