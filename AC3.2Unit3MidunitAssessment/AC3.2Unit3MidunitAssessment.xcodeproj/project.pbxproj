@@ -13,6 +13,9 @@
 		E36220271DC39C6600BFDF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36220251DC39C6600BFDF47 /* LaunchScreen.storyboard */; };
 		E36220311DC39CC400BFDF47 /* SpotifyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36220301DC39CC400BFDF47 /* SpotifyTableViewController.swift */; };
 		E36220331DC39CEF00BFDF47 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36220321DC39CEF00BFDF47 /* Album.swift */; };
+		E36220361DC39D9E00BFDF47 /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36220351DC39D9E00BFDF47 /* SpotifyManager.swift */; };
+		E36220391DC3AA3200BFDF47 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36220381DC3AA3200BFDF47 /* AlbumDetailViewController.swift */; };
+		E362203B1DC3B0B100BFDF47 /* SpotifyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362203A1DC3B0B100BFDF47 /* SpotifyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E36220281DC39C6600BFDF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E36220301DC39CC400BFDF47 /* SpotifyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyTableViewController.swift; sourceTree = "<group>"; };
 		E36220321DC39CEF00BFDF47 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		E36220351DC39D9E00BFDF47 /* SpotifyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
+		E36220381DC3AA3200BFDF47 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumDetailViewController.swift; path = ../AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		E362203A1DC3B0B100BFDF47 /* SpotifyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +46,9 @@
 		E36220101DC39C6600BFDF47 = {
 			isa = PBXGroup;
 			children = (
+				E36220341DC39D8C00BFDF47 /* SpotifyManager */,
 				E362202F1DC39CAE00BFDF47 /* View Controllers */,
+				E36220371DC3AA1100BFDF47 /* Detail */,
 				E362202E1DC39CA600BFDF47 /* Models */,
 				E362201B1DC39C6600BFDF47 /* AC3.2Unit3MidunitAssessment */,
 				E362201A1DC39C6600BFDF47 /* Products */,
@@ -58,8 +66,8 @@
 		E362201B1DC39C6600BFDF47 /* AC3.2Unit3MidunitAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				E362201C1DC39C6600BFDF47 /* AppDelegate.swift */,
 				E36220201DC39C6600BFDF47 /* Main.storyboard */,
+				E362201C1DC39C6600BFDF47 /* AppDelegate.swift */,
 				E36220231DC39C6600BFDF47 /* Assets.xcassets */,
 				E36220251DC39C6600BFDF47 /* LaunchScreen.storyboard */,
 				E36220281DC39C6600BFDF47 /* Info.plist */,
@@ -80,8 +88,27 @@
 			isa = PBXGroup;
 			children = (
 				E36220301DC39CC400BFDF47 /* SpotifyTableViewController.swift */,
+				E362203A1DC3B0B100BFDF47 /* SpotifyTableViewCell.swift */,
 			);
 			name = "View Controllers";
+			path = AC3.2Unit3MidunitAssessment;
+			sourceTree = "<group>";
+		};
+		E36220341DC39D8C00BFDF47 /* SpotifyManager */ = {
+			isa = PBXGroup;
+			children = (
+				E36220351DC39D9E00BFDF47 /* SpotifyManager.swift */,
+			);
+			name = SpotifyManager;
+			path = AC3.2Unit3MidunitAssessment;
+			sourceTree = "<group>";
+		};
+		E36220371DC3AA1100BFDF47 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E36220381DC3AA3200BFDF47 /* AlbumDetailViewController.swift */,
+			);
+			name = Detail;
 			path = AC3.2Unit3MidunitAssessment;
 			sourceTree = "<group>";
 		};
@@ -157,7 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E362203B1DC3B0B100BFDF47 /* SpotifyTableViewCell.swift in Sources */,
+				E36220361DC39D9E00BFDF47 /* SpotifyManager.swift in Sources */,
 				E36220331DC39CEF00BFDF47 /* Album.swift in Sources */,
+				E36220391DC3AA3200BFDF47 /* AlbumDetailViewController.swift in Sources */,
 				E36220311DC39CC400BFDF47 /* SpotifyTableViewController.swift in Sources */,
 				E362201D1DC39C6600BFDF47 /* AppDelegate.swift in Sources */,
 			);
@@ -319,6 +349,7 @@
 				E362202D1DC39C6600BFDF47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
