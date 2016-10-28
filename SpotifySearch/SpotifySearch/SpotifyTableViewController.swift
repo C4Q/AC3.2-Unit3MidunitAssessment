@@ -18,7 +18,7 @@ class SpotifyTableViewController: UITableViewController {
         APIRequestManager.manager.getSpotifyData(apiEndPoint: "https://api.spotify.com/v1/search?q=automatic&type=album&limit=50") { (data: Data?) in
                 if let k = self.validKaskadeData(data: data!) {
                     self.kaskade = k
-                    print("*****kaskade info has been populated")
+                    print("*****kaskade data has been populated")
             }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
@@ -53,12 +53,12 @@ class SpotifyTableViewController: UITableViewController {
             kaskadeItems.forEach({ kaskadeObject in
                 
                 guard let albumName: String = kaskadeObject["name"] as? String,
+                
+                let artists: [[String:Any]] = kaskadeObject["artists"]as? [[String:Any]],
+                    let name: String = artists[0]["name"] as? String,
                     
-                let artists: [String:Any] = kaskadeObject["artists"]as? [String:Any],
-                    let name: String = artists["name"] as? String,
-                    
-                let imageURL: [String:Any] = kaskadeObject["images"] as? [String:Any],
-                    let biggestImage: String = imageURL["url"] as? String,
+                let imageURL: [[String:Any]] = kaskadeObject["images"] as? [[String:Any]],
+                    let biggestImage: String = imageURL[0]["url"] as? String,
                     
                 let albumURL: [String:Any] = kaskadeObject["external_urls"] as? [String:Any],
                     let spotifyURL: String = albumURL["spotify"] as? String else { return }
