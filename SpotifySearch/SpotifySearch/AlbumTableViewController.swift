@@ -16,7 +16,7 @@ class AlbumTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let array = Array(APIRequestManager.manager.apiEndpoint.characters)
-        self.title = String(array[36...47])
+        self.title = String(array[36...48])
         
         loadAlbums()
     }

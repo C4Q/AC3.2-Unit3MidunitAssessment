@@ -14,7 +14,7 @@ class APIRequestManager {
     private init() {}
     
     //MARK: - Properties
-    let apiEndpoint: String = "https://api.spotify.com/v1/search?q=Kanye%20West&type=album&limit=50"
+    let apiEndpoint: String = "https://api.spotify.com/v1/search?q=Frank%20Ocean&type=album&limit=50"
     
     //MARK: - Methods
     func getData(apiEndpoint: String, callback: @escaping (Data?) -> Void) {
