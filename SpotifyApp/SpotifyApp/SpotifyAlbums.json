@@ -1,0 +1,1711 @@
+{
+  "albums" : {
+    "href" : "https://api.spotify.com/v1/search?query=blue&offset=0&limit=50&type=album",
+    "items" : [ {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3WGpXCj9YhhfX11TToZcXP"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3WGpXCj9YhhfX11TToZcXP",
+        "id" : "3WGpXCj9YhhfX11TToZcXP",
+        "name" : "Troye Sivan",
+        "type" : "artist",
+        "uri" : "spotify:artist:3WGpXCj9YhhfX11TToZcXP"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5ouTDazE4LF9bVJPx1nlgW"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5ouTDazE4LF9bVJPx1nlgW",
+      "id" : "5ouTDazE4LF9bVJPx1nlgW",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/f96947dffe790a60fdf7f2a88549dc4c6f28fcef",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/7a718b371127b1f81971e5fc648e053fbd219a88",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/48513266b48e668a3c57e56daeffcd3582bfdfde",
+        "width" : 64
+      } ],
+      "name" : "Blue Neighbourhood (Deluxe)",
+      "type" : "album",
+      "uri" : "spotify:album:5ouTDazE4LF9bVJPx1nlgW"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1HBjj22wzbscIZ9sEb5dyf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1HBjj22wzbscIZ9sEb5dyf",
+        "id" : "1HBjj22wzbscIZ9sEb5dyf",
+        "name" : "Jonas Blue",
+        "type" : "artist",
+        "uri" : "spotify:artist:1HBjj22wzbscIZ9sEb5dyf"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3unvtEoEI6Ga2FMKotI20p"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3unvtEoEI6Ga2FMKotI20p",
+      "id" : "3unvtEoEI6Ga2FMKotI20p",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/8bfe0b337a3065290e831433a200aecc13515d1c",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/9e04f99958dd7f751c3490723e8bf68380168bd2",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/527f5249d480050f6de807c598a92d73d890c307",
+        "width" : 64
+      } ],
+      "name" : "Perfect Strangers",
+      "type" : "album",
+      "uri" : "spotify:album:3unvtEoEI6Ga2FMKotI20p"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3jOstUTkEu2JkjvRdBA5Gu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu",
+        "id" : "3jOstUTkEu2JkjvRdBA5Gu",
+        "name" : "Weezer",
+        "type" : "artist",
+        "uri" : "spotify:artist:3jOstUTkEu2JkjvRdBA5Gu"
+      } ],
+      "available_markets" : [ "CA", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/33CmI2lR8PnQwz6133Mc7l"
+      },
+      "href" : "https://api.spotify.com/v1/albums/33CmI2lR8PnQwz6133Mc7l",
+      "id" : "33CmI2lR8PnQwz6133Mc7l",
+      "images" : [ {
+        "height" : 573,
+        "url" : "https://i.scdn.co/image/3c1029fa5f16197af9e91dd6b1520266f3ff8334",
+        "width" : 640
+      }, {
+        "height" : 269,
+        "url" : "https://i.scdn.co/image/4be0539e235b73ad96c4b7f0870589c695c8eb1c",
+        "width" : 300
+      }, {
+        "height" : 57,
+        "url" : "https://i.scdn.co/image/e8a5c773b6677b633c2b4541384bf9193283591f",
+        "width" : 64
+      } ],
+      "name" : "Weezer (Deluxe Edition)",
+      "type" : "album",
+      "uri" : "spotify:album:33CmI2lR8PnQwz6133Mc7l"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1n2pb9Tsfe4SwAjmUac6YT"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1n2pb9Tsfe4SwAjmUac6YT",
+        "id" : "1n2pb9Tsfe4SwAjmUac6YT",
+        "name" : "Jake Owen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1n2pb9Tsfe4SwAjmUac6YT"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4GeJssW5iLOSLOIXhLfOUJ"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4GeJssW5iLOSLOIXhLfOUJ",
+      "id" : "4GeJssW5iLOSLOIXhLfOUJ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/971f561f96e5e83ef8e376c6efeeda29ce079b2c",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/8c8d49b8ba23eb2c7f55cce6b35ca66cd4f756b3",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/0cb8c532027d8d87b7a4c955dee9f3132bff4ff6",
+        "width" : 64
+      } ],
+      "name" : "Barefoot Blue Jean Night",
+      "type" : "album",
+      "uri" : "spotify:album:4GeJssW5iLOSLOIXhLfOUJ"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1UTPBmNbXNTittyMJrNkvw"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1UTPBmNbXNTittyMJrNkvw",
+        "id" : "1UTPBmNbXNTittyMJrNkvw",
+        "name" : "Blake Shelton",
+        "type" : "artist",
+        "uri" : "spotify:artist:1UTPBmNbXNTittyMJrNkvw"
+      } ],
+      "available_markets" : [ "CA", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1WXCjIDp84rJN6Sa1Um9kJ"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1WXCjIDp84rJN6Sa1Um9kJ",
+      "id" : "1WXCjIDp84rJN6Sa1Um9kJ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6158ff9f13a00a5058ce4dc77f08efe092427d43",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/2ba6bf266d1c720c474011db9f503751cc6e94d8",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/3f06e0554c5cf68d010fe306ec1110b72b7c4dc7",
+        "width" : 64
+      } ],
+      "name" : "Red River Blue (Deluxe)",
+      "type" : "album",
+      "uri" : "spotify:album:1WXCjIDp84rJN6Sa1Um9kJ"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1HBjj22wzbscIZ9sEb5dyf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1HBjj22wzbscIZ9sEb5dyf",
+        "id" : "1HBjj22wzbscIZ9sEb5dyf",
+        "name" : "Jonas Blue",
+        "type" : "artist",
+        "uri" : "spotify:artist:1HBjj22wzbscIZ9sEb5dyf"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/55zQqrjWsFHRcI1mxlQSsZ"
+      },
+      "href" : "https://api.spotify.com/v1/albums/55zQqrjWsFHRcI1mxlQSsZ",
+      "id" : "55zQqrjWsFHRcI1mxlQSsZ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/095687c86549ebe3b95c1f3b46258926140c6e3d",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/00d38a1a9c17c9a169b3b605d64ef4855905d030",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/3d30fd18305b2dbedbc1388e262fa452669fcd30",
+        "width" : 64
+      } ],
+      "name" : "Fast Car (Radio Edit)",
+      "type" : "album",
+      "uri" : "spotify:album:55zQqrjWsFHRcI1mxlQSsZ"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4LLpKhyESsyAXpc4laK94U",
+        "id" : "4LLpKhyESsyAXpc4laK94U",
+        "name" : "Mac Miller",
+        "type" : "artist",
+        "uri" : "spotify:artist:4LLpKhyESsyAXpc4laK94U"
+      } ],
+      "available_markets" : [ "AD", "AR", "AU", "BG", "BO", "BR", "CA", "CL", "CO", "CR", "CY", "CZ", "DE", "DO", "EC", "EE", "GR", "GT", "HK", "HN", "HU", "ID", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6VhDYmsjHqRxKXd0z7hmXI"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6VhDYmsjHqRxKXd0z7hmXI",
+      "id" : "6VhDYmsjHqRxKXd0z7hmXI",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/f68aa17c4a520c9bb9aba7e154c17ea59bf403f2",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/1ae281d716022ddbd2de0fa6697504949c4b31a0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/fb38628b41baab065c4b02cb99c2cab0a2ac0f33",
+        "width" : 64
+      } ],
+      "name" : "Blue Slide Park",
+      "type" : "album",
+      "uri" : "spotify:album:6VhDYmsjHqRxKXd0z7hmXI"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/43ZHCT0cAZBISjO8DG9PnE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/43ZHCT0cAZBISjO8DG9PnE",
+        "id" : "43ZHCT0cAZBISjO8DG9PnE",
+        "name" : "Elvis Presley",
+        "type" : "artist",
+        "uri" : "spotify:artist:43ZHCT0cAZBISjO8DG9PnE"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7xe8VI48TxUpU1IIo0RfGi"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7xe8VI48TxUpU1IIo0RfGi",
+      "id" : "7xe8VI48TxUpU1IIo0RfGi",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/4295b5ff74d4f944367144acbe616b6f62d20b17",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/203104e5843248c700b078f391d4bc759c5d7f47",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/0c0a172373b0211c590b241270d05b70889075a1",
+        "width" : 64
+      } ],
+      "name" : "Blue Hawaii",
+      "type" : "album",
+      "uri" : "spotify:album:7xe8VI48TxUpU1IIo0RfGi"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0kbYTNQb4Pb1rPbbaF0pT4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0kbYTNQb4Pb1rPbbaF0pT4",
+        "id" : "0kbYTNQb4Pb1rPbbaF0pT4",
+        "name" : "Miles Davis",
+        "type" : "artist",
+        "uri" : "spotify:artist:0kbYTNQb4Pb1rPbbaF0pT4"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4sb0eMpDn3upAFfyi4q2rw"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4sb0eMpDn3upAFfyi4q2rw",
+      "id" : "4sb0eMpDn3upAFfyi4q2rw",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/dd695d8a18d33640f2abca4588ef36a8ac1811a6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/01f81fbd70d1cef051806e892e6db4e49224697b",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ac887b673483fd6cd03a72bab311affcd9f8de14",
+        "width" : 64
+      } ],
+      "name" : "Kind Of Blue (Legacy Edition)",
+      "type" : "album",
+      "uri" : "spotify:album:4sb0eMpDn3upAFfyi4q2rw"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+        "id" : "5hW4L92KnC6dX9t7tYM4Ve",
+        "name" : "Joni Mitchell",
+        "type" : "artist",
+        "uri" : "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1vz94WpXDVYIEGja8cjFNa"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1vz94WpXDVYIEGja8cjFNa",
+      "id" : "1vz94WpXDVYIEGja8cjFNa",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/b3b97a6eef240a7b2214eff1a83901bd6e31f839",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/2d01fe1175bf9b65c4165f8bb59a784a134567fc",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/41bc2cf999ecaf4b6d637b540d736c2369837d39",
+        "width" : 64
+      } ],
+      "name" : "Blue",
+      "type" : "album",
+      "uri" : "spotify:album:1vz94WpXDVYIEGja8cjFNa"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5DOQ7jQ2pnXaiJiIoiEQjz"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5DOQ7jQ2pnXaiJiIoiEQjz",
+        "id" : "5DOQ7jQ2pnXaiJiIoiEQjz",
+        "name" : "Charles Esten",
+        "type" : "artist",
+        "uri" : "spotify:artist:5DOQ7jQ2pnXaiJiIoiEQjz"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5EeR9fSiWZ6XoJEiwHQzNv"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5EeR9fSiWZ6XoJEiwHQzNv",
+      "id" : "5EeR9fSiWZ6XoJEiwHQzNv",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/8ac7206957c74055362d338aed187c056ab98f14",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4ee38605f9948914d11c711a7f24aae05ced0532",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/e486811282f9f044f101759039f33ffead79129e",
+        "width" : 64
+      } ],
+      "name" : "Through the Blue",
+      "type" : "album",
+      "uri" : "spotify:album:5EeR9fSiWZ6XoJEiwHQzNv"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0UpuH5U4nZ3UGGUJi0Zfbp"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0UpuH5U4nZ3UGGUJi0Zfbp",
+        "id" : "0UpuH5U4nZ3UGGUJi0Zfbp",
+        "name" : "Blue Swede",
+        "type" : "artist",
+        "uri" : "spotify:artist:0UpuH5U4nZ3UGGUJi0Zfbp"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6fBMaH0IiymemwFKmn18Ze"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6fBMaH0IiymemwFKmn18Ze",
+      "id" : "6fBMaH0IiymemwFKmn18Ze",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6fb438f0655af291ac28900b1c75e75aa3d22989",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/90cba69ca91e475df0e3e7925276d54f4e5b3e04",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/36781eedf859852a223eeb9346c44f6c7f31b0a2",
+        "width" : 64
+      } ],
+      "name" : "Hooked On A Feeling",
+      "type" : "album",
+      "uri" : "spotify:album:6fBMaH0IiymemwFKmn18Ze"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6TcnmlCSxihzWOQJ8k0rNS"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS",
+        "id" : "6TcnmlCSxihzWOQJ8k0rNS",
+        "name" : "Third Eye Blind",
+        "type" : "artist",
+        "uri" : "spotify:artist:6TcnmlCSxihzWOQJ8k0rNS"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7z6LqzGLGd6tnWvsH9iojB"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7z6LqzGLGd6tnWvsH9iojB",
+      "id" : "7z6LqzGLGd6tnWvsH9iojB",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/c1ae1f5a52551d344d27ef7a5bd17c1f7feaf077",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/628608ef222aabea80b5c5de45b237a2e90aadf6",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/510e1f4c9ae305d61383436b2790e329adaa8258",
+        "width" : 64
+      } ],
+      "name" : "Blue",
+      "type" : "album",
+      "uri" : "spotify:album:7z6LqzGLGd6tnWvsH9iojB"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3jOstUTkEu2JkjvRdBA5Gu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu",
+        "id" : "3jOstUTkEu2JkjvRdBA5Gu",
+        "name" : "Weezer",
+        "type" : "artist",
+        "uri" : "spotify:artist:3jOstUTkEu2JkjvRdBA5Gu"
+      } ],
+      "available_markets" : [ "CA", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1xpGyKyV26uPstk1Elgp9Q"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1xpGyKyV26uPstk1Elgp9Q",
+      "id" : "1xpGyKyV26uPstk1Elgp9Q",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/0e9c778a26796b85b75514488f4a2cf1e6c4e2ad",
+        "width" : 637
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4533bf06ee95fc5a1c9e59980d19b9d842b13949",
+        "width" : 299
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/a052ce31260b1c99cb8d6b42c934d3bf186e0cfc",
+        "width" : 64
+      } ],
+      "name" : "Weezer",
+      "type" : "album",
+      "uri" : "spotify:album:1xpGyKyV26uPstk1Elgp9Q"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1moxjboGR7GNWYIMWsRjgG"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1moxjboGR7GNWYIMWsRjgG",
+        "id" : "1moxjboGR7GNWYIMWsRjgG",
+        "name" : "Florence + The Machine",
+        "type" : "artist",
+        "uri" : "spotify:artist:1moxjboGR7GNWYIMWsRjgG"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0Om2TWqroaCLQamQME3bD2"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0Om2TWqroaCLQamQME3bD2",
+      "id" : "0Om2TWqroaCLQamQME3bD2",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/3e4bb24f0e59cc4e9c5bf24ee1aad3f54ce5a14d",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/7ba4af1e5ff41d5a4c4bcd8e6b8c56eebf5ce9d4",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/391ececde2d3241fe425b416de5133ff550295a4",
+        "width" : 64
+      } ],
+      "name" : "How Big, How Blue, How Beautiful (Deluxe)",
+      "type" : "album",
+      "uri" : "spotify:album:0Om2TWqroaCLQamQME3bD2"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2VZNmg4vCnew4Pavo8zDdW"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2VZNmg4vCnew4Pavo8zDdW",
+        "id" : "2VZNmg4vCnew4Pavo8zDdW",
+        "name" : "Max Richter",
+        "type" : "artist",
+        "uri" : "spotify:artist:2VZNmg4vCnew4Pavo8zDdW"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0m6Zt3YJAMWwGRTPvTnY4g"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0m6Zt3YJAMWwGRTPvTnY4g",
+      "id" : "0m6Zt3YJAMWwGRTPvTnY4g",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/e1ffaebb62470601df0986f5120bfc0fb0ea9699",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/0c92ea34ca04a70f79ae684350358848ccbb951a",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/16955ce9b788061a3bf4c1cd3162730ad4095b35",
+        "width" : 64
+      } ],
+      "name" : "The Blue Notebooks",
+      "type" : "album",
+      "uri" : "spotify:album:0m6Zt3YJAMWwGRTPvTnY4g"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2CmlamCjlwhqweufNzPyil"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2CmlamCjlwhqweufNzPyil",
+        "id" : "2CmlamCjlwhqweufNzPyil",
+        "name" : "Girl Blue",
+        "type" : "artist",
+        "uri" : "spotify:artist:2CmlamCjlwhqweufNzPyil"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7GTLkpZZmWmsAG3SY7jsRa"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7GTLkpZZmWmsAG3SY7jsRa",
+      "id" : "7GTLkpZZmWmsAG3SY7jsRa",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/a7b2ee6f03e89660786d5382d6fe698943e71d50",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4ec06845c2a4636d197eee3501fbff780aea8229",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/b189c872bd1066c8ef4f90542d963b494e613487",
+        "width" : 64
+      } ],
+      "name" : "I Am Not a Star",
+      "type" : "album",
+      "uri" : "spotify:album:7GTLkpZZmWmsAG3SY7jsRa"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5ujrA1eZLDHR7yQ6FZa2qA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5ujrA1eZLDHR7yQ6FZa2qA",
+        "id" : "5ujrA1eZLDHR7yQ6FZa2qA",
+        "name" : "Vera Blue",
+        "type" : "artist",
+        "uri" : "spotify:artist:5ujrA1eZLDHR7yQ6FZa2qA"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0V6P8zzga41xlAM7YWF7pO"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0V6P8zzga41xlAM7YWF7pO",
+      "id" : "0V6P8zzga41xlAM7YWF7pO",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/b5a3da41894120e97f9b5fb0aca33c1dfdf85686",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/86f5cc552b1dc81eed4ffd94c2be8a91d3f64572",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c873bed529f7fb946bde51b3f1214b5f8c37c317",
+        "width" : 64
+      } ],
+      "name" : "Fingertips",
+      "type" : "album",
+      "uri" : "spotify:album:0V6P8zzga41xlAM7YWF7pO"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7jefIIksOi1EazgRTfW2Pk"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7jefIIksOi1EazgRTfW2Pk",
+        "id" : "7jefIIksOi1EazgRTfW2Pk",
+        "name" : "Electric Light Orchestra",
+        "type" : "artist",
+        "uri" : "spotify:artist:7jefIIksOi1EazgRTfW2Pk"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3usnShwygMXVZB4IV5dwnU"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3usnShwygMXVZB4IV5dwnU",
+      "id" : "3usnShwygMXVZB4IV5dwnU",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6e4bfaca5c09f0f480a51ac3b851e411b7338eb2",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/111a5fa4e18f5c46a027eec783c58aeccf0f8055",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/f5e5f35d1444cf4747f89ad239cd97f0c53ef4d3",
+        "width" : 64
+      } ],
+      "name" : "Out of the Blue",
+      "type" : "album",
+      "uri" : "spotify:album:3usnShwygMXVZB4IV5dwnU"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/00tVTdpEhQQw1bqdu8RCx2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/00tVTdpEhQQw1bqdu8RCx2",
+        "id" : "00tVTdpEhQQw1bqdu8RCx2",
+        "name" : "Blue Öyster Cult",
+        "type" : "artist",
+        "uri" : "spotify:artist:00tVTdpEhQQw1bqdu8RCx2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6C9WzlQANeoD0GW5B41YJt"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6C9WzlQANeoD0GW5B41YJt",
+      "id" : "6C9WzlQANeoD0GW5B41YJt",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6bd4450a8fbf30702a92f1c825377f1933ded249",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/587d47747f51b575a75684e64e8da0c5b1432fb5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/8c14e672f1a29b0dc632b9c4e0f6ef19232c6dcf",
+        "width" : 64
+      } ],
+      "name" : "Agents Of Fortune",
+      "type" : "album",
+      "uri" : "spotify:album:6C9WzlQANeoD0GW5B41YJt"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1moxjboGR7GNWYIMWsRjgG"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1moxjboGR7GNWYIMWsRjgG",
+        "id" : "1moxjboGR7GNWYIMWsRjgG",
+        "name" : "Florence + The Machine",
+        "type" : "artist",
+        "uri" : "spotify:artist:1moxjboGR7GNWYIMWsRjgG"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2btszoya78vyT8fwelmVnz"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2btszoya78vyT8fwelmVnz",
+      "id" : "2btszoya78vyT8fwelmVnz",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/3e4bb24f0e59cc4e9c5bf24ee1aad3f54ce5a14d",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/7ba4af1e5ff41d5a4c4bcd8e6b8c56eebf5ce9d4",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/391ececde2d3241fe425b416de5133ff550295a4",
+        "width" : 64
+      } ],
+      "name" : "How Big, How Blue, How Beautiful",
+      "type" : "album",
+      "uri" : "spotify:album:2btszoya78vyT8fwelmVnz"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/64rxQRJsLgZwHHyWKB8fiF"
+        },
+        "href" : "https://api.spotify.com/v1/artists/64rxQRJsLgZwHHyWKB8fiF",
+        "id" : "64rxQRJsLgZwHHyWKB8fiF",
+        "name" : "Eiffel 65",
+        "type" : "artist",
+        "uri" : "spotify:artist:64rxQRJsLgZwHHyWKB8fiF"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2WIi0lRPypwTbZHrQulb5S"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2WIi0lRPypwTbZHrQulb5S",
+      "id" : "2WIi0lRPypwTbZHrQulb5S",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/41c83ac08dedeb752f4be09b0d7fc3299d6fa495",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/0131e75921f9b01a1e488965c42095f81c0a37f5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/abb2747835831929f71cd7a52734f23760fe528d",
+        "width" : 64
+      } ],
+      "name" : "Blue (Da Ba Dee)",
+      "type" : "album",
+      "uri" : "spotify:album:2WIi0lRPypwTbZHrQulb5S"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5EDkJDlRNcMs3ewliB24QA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5EDkJDlRNcMs3ewliB24QA",
+        "id" : "5EDkJDlRNcMs3ewliB24QA",
+        "name" : "Lo-Fang",
+        "type" : "artist",
+        "uri" : "spotify:artist:5EDkJDlRNcMs3ewliB24QA"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/66BEZ127VgaQbxxRJijFZg"
+      },
+      "href" : "https://api.spotify.com/v1/albums/66BEZ127VgaQbxxRJijFZg",
+      "id" : "66BEZ127VgaQbxxRJijFZg",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/18303b8a31ace7d4b04ce28652d556fa455ffdc2",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/6161b0e395685b8a5fef1d0a2ad7cabb2ab0ef11",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/f15ee26b23aa2e1feee3409bedce53b76c395653",
+        "width" : 64
+      } ],
+      "name" : "Blue Film",
+      "type" : "album",
+      "uri" : "spotify:album:66BEZ127VgaQbxxRJijFZg"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/159qqlGwzE04xyqpfAwRLo"
+        },
+        "href" : "https://api.spotify.com/v1/artists/159qqlGwzE04xyqpfAwRLo",
+        "id" : "159qqlGwzE04xyqpfAwRLo",
+        "name" : "Parkway Drive",
+        "type" : "artist",
+        "uri" : "spotify:artist:159qqlGwzE04xyqpfAwRLo"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3sj64vlMjeymCV05otr8FA"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3sj64vlMjeymCV05otr8FA",
+      "id" : "3sj64vlMjeymCV05otr8FA",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/8ea3d5328dbfc704e13ae6e50f3d8afffe06e3b1",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/798ec5b4fa455c9d6448d68fb04d372c0de161db",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d38843f6dda4b0741c258b483ffdb0c01beab098",
+        "width" : 64
+      } ],
+      "name" : "Deep Blue",
+      "type" : "album",
+      "uri" : "spotify:album:3sj64vlMjeymCV05otr8FA"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1HBjj22wzbscIZ9sEb5dyf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1HBjj22wzbscIZ9sEb5dyf",
+        "id" : "1HBjj22wzbscIZ9sEb5dyf",
+        "name" : "Jonas Blue",
+        "type" : "artist",
+        "uri" : "spotify:artist:1HBjj22wzbscIZ9sEb5dyf"
+      } ],
+      "available_markets" : [ "CA", "US", "MX" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5gmQHFsYrX4vR0CISDpyUU"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5gmQHFsYrX4vR0CISDpyUU",
+      "id" : "5gmQHFsYrX4vR0CISDpyUU",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/137c14417255860ef81b2ac2c0f9190072fceae1",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/0ea354bbbf7783267ba88996645bb35d15d232fa",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/5a8d7564346248dcdd633c331f5842cffa32eca7",
+        "width" : 64
+      } ],
+      "name" : "By Your Side",
+      "type" : "album",
+      "uri" : "spotify:album:5gmQHFsYrX4vR0CISDpyUU"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1TJbmc7jTpw78GKCiMpvDh"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1TJbmc7jTpw78GKCiMpvDh",
+        "id" : "1TJbmc7jTpw78GKCiMpvDh",
+        "name" : "Blue October",
+        "type" : "artist",
+        "uri" : "spotify:artist:1TJbmc7jTpw78GKCiMpvDh"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6t6aBQ1OKqyK9c1nPJEWeX"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6t6aBQ1OKqyK9c1nPJEWeX",
+      "id" : "6t6aBQ1OKqyK9c1nPJEWeX",
+      "images" : [ {
+        "height" : 635,
+        "url" : "https://i.scdn.co/image/258e58e5258398f710e04a517297d71899c91603",
+        "width" : 640
+      }, {
+        "height" : 298,
+        "url" : "https://i.scdn.co/image/4c4191932c2b71adcf08861266718640bed2ac49",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/0f28085ae8c4ee4c2b128331981994bc681a041c",
+        "width" : 64
+      } ],
+      "name" : "Foiled",
+      "type" : "album",
+      "uri" : "spotify:album:6t6aBQ1OKqyK9c1nPJEWeX"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5rSXSAkZ67PYJSvpUpkOr7"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5rSXSAkZ67PYJSvpUpkOr7",
+        "id" : "5rSXSAkZ67PYJSvpUpkOr7",
+        "name" : "Backstreet Boys",
+        "type" : "artist",
+        "uri" : "spotify:artist:5rSXSAkZ67PYJSvpUpkOr7"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/41zXjyVr6dzmchWf8tv3UO"
+      },
+      "href" : "https://api.spotify.com/v1/albums/41zXjyVr6dzmchWf8tv3UO",
+      "id" : "41zXjyVr6dzmchWf8tv3UO",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/0fcfc86b4e0c9d9ff5c2b910335544763a4f482e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4d852620abf1b9a01839e40c22c5261e6881ab57",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/dd5f9e169161289b6a8c35b2d76bfa17932ad38b",
+        "width" : 64
+      } ],
+      "name" : "Black & Blue",
+      "type" : "album",
+      "uri" : "spotify:album:41zXjyVr6dzmchWf8tv3UO"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6pDRa5fS3myWSP0fpIUcNl"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6pDRa5fS3myWSP0fpIUcNl",
+        "id" : "6pDRa5fS3myWSP0fpIUcNl",
+        "name" : "Evans Blue",
+        "type" : "artist",
+        "uri" : "spotify:artist:6pDRa5fS3myWSP0fpIUcNl"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/78rWNRsJSpGUgVly6yVDH0"
+      },
+      "href" : "https://api.spotify.com/v1/albums/78rWNRsJSpGUgVly6yVDH0",
+      "id" : "78rWNRsJSpGUgVly6yVDH0",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/7967a0af04ee3e0b207f05e8bdd272dae6f245e8",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/266c38ed3e04648ece43dbc46e463e5dd9977bca",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/24c4d2f1093ffa9b88455bc75c702591bcf6c625",
+        "width" : 64
+      } ],
+      "name" : "evans|blue",
+      "type" : "album",
+      "uri" : "spotify:album:78rWNRsJSpGUgVly6yVDH0"
+    }, {
+      "album_type" : "compilation",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3WrFJ7ztbogyGnTHbHJFl2",
+        "id" : "3WrFJ7ztbogyGnTHbHJFl2",
+        "name" : "The Beatles",
+        "type" : "artist",
+        "uri" : "spotify:artist:3WrFJ7ztbogyGnTHbHJFl2"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1cTeNkeINtXiaMLlashAKs"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1cTeNkeINtXiaMLlashAKs",
+      "id" : "1cTeNkeINtXiaMLlashAKs",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/b4b907579f0c68b81fa98e16478351bdcd943f94",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/fa4c98f53c26e1fb9eeb1327c0a28d4c126012ca",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/8b89a1cfa518d903543785603a4b7024cdb9140b",
+        "width" : 64
+      } ],
+      "name" : "The Beatles 1967 - 1970 (Remastered)",
+      "type" : "album",
+      "uri" : "spotify:album:1cTeNkeINtXiaMLlashAKs"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0X2BH1fck6amBIoJhDVmmJ"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0X2BH1fck6amBIoJhDVmmJ",
+        "id" : "0X2BH1fck6amBIoJhDVmmJ",
+        "name" : "Ellie Goulding",
+        "type" : "artist",
+        "uri" : "spotify:artist:0X2BH1fck6amBIoJhDVmmJ"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2Kv7vGnrsyF0N2FLW6pioM"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2Kv7vGnrsyF0N2FLW6pioM",
+      "id" : "2Kv7vGnrsyF0N2FLW6pioM",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/f24960ef4ee99060946a11648e9747ef3ff4a659",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/de4b97c2b3d8f7d562bb43d68611ec5284fad677",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/6576d25f87b5f5b67554f707e77db35845428502",
+        "width" : 64
+      } ],
+      "name" : "Still Falling For You (Jonas Blue Remix)",
+      "type" : "album",
+      "uri" : "spotify:album:2Kv7vGnrsyF0N2FLW6pioM"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2QoU3awHVdcHS8LrZEKvSM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2QoU3awHVdcHS8LrZEKvSM",
+        "id" : "2QoU3awHVdcHS8LrZEKvSM",
+        "name" : "Wilco",
+        "type" : "artist",
+        "uri" : "spotify:artist:2QoU3awHVdcHS8LrZEKvSM"
+      } ],
+      "available_markets" : [ "CA", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6dbcDWUXEFpNrmCJoqZsk4"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6dbcDWUXEFpNrmCJoqZsk4",
+      "id" : "6dbcDWUXEFpNrmCJoqZsk4",
+      "images" : [ {
+        "height" : 570,
+        "url" : "https://i.scdn.co/image/a040c2449cd281fb114927a6c5073f5708934ac2",
+        "width" : 640
+      }, {
+        "height" : 267,
+        "url" : "https://i.scdn.co/image/b7ae2ff2b133eed49b76400bc5a6abd08dc01bf7",
+        "width" : 300
+      }, {
+        "height" : 57,
+        "url" : "https://i.scdn.co/image/e575e4fa5a0a5ce511ed5c1ab57f8bf758282662",
+        "width" : 64
+      } ],
+      "name" : "Sky Blue Sky",
+      "type" : "album",
+      "uri" : "spotify:album:6dbcDWUXEFpNrmCJoqZsk4"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5N5RfI8FFXk4WQ8kkjE407"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5N5RfI8FFXk4WQ8kkjE407",
+        "id" : "5N5RfI8FFXk4WQ8kkjE407",
+        "name" : "Deep Blue Something",
+        "type" : "artist",
+        "uri" : "spotify:artist:5N5RfI8FFXk4WQ8kkjE407"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6errc1YD0IKeT3sudfomvO"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6errc1YD0IKeT3sudfomvO",
+      "id" : "6errc1YD0IKeT3sudfomvO",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/7f1130428dd69da1af924c0d0d89bcf157122c44",
+        "width" : 639
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/12e408ecd0da4d4cb5fe99943c85bfa548562b6c",
+        "width" : 299
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/5d7c4c0c9dc968e5ce2e6ac619e51c30a8cf8cd2",
+        "width" : 64
+      } ],
+      "name" : "Home",
+      "type" : "album",
+      "uri" : "spotify:album:6errc1YD0IKeT3sudfomvO"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/02uPe16VFxPaiueQsPEDkE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/02uPe16VFxPaiueQsPEDkE",
+        "id" : "02uPe16VFxPaiueQsPEDkE",
+        "name" : "The Album Leaf",
+        "type" : "artist",
+        "uri" : "spotify:artist:02uPe16VFxPaiueQsPEDkE"
+      } ],
+      "available_markets" : [ "AR", "AU", "BO", "BR", "CA", "CL", "CO", "CR", "CY", "DO", "EC", "GT", "HK", "HN", "ID", "MX", "MY", "NI", "NZ", "PA", "PE", "PH", "PY", "SG", "SV", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1pFrCdJfefM5UgijeacUpB"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1pFrCdJfefM5UgijeacUpB",
+      "id" : "1pFrCdJfefM5UgijeacUpB",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/cd21849a21032172c104f2fa143b235129454398",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/93b291fe9a83b558df8a68ae2236992f0e541053",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/be38d706cd006d2aa62d2c7e9fc0ba936ac179e3",
+        "width" : 64
+      } ],
+      "name" : "Into The Blue Again",
+      "type" : "album",
+      "uri" : "spotify:album:1pFrCdJfefM5UgijeacUpB"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6YB0tbDGk01Q0P6wcHPjpC"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6YB0tbDGk01Q0P6wcHPjpC",
+        "id" : "6YB0tbDGk01Q0P6wcHPjpC",
+        "name" : "Bob Weir",
+        "type" : "artist",
+        "uri" : "spotify:artist:6YB0tbDGk01Q0P6wcHPjpC"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7dmOAk0RGFp5T4TaOoPxFl"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7dmOAk0RGFp5T4TaOoPxFl",
+      "id" : "7dmOAk0RGFp5T4TaOoPxFl",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/402db93a3d562624f47d98256850352a19494a49",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4f8657042dc4728798d8ad6838e0a06fbb1b3ab9",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ba5718de88bc89df31161d4f140f29c32eefdbbb",
+        "width" : 64
+      } ],
+      "name" : "Blue Mountain",
+      "type" : "album",
+      "uri" : "spotify:album:7dmOAk0RGFp5T4TaOoPxFl"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/58F5GqfOMje69JMa2LIHD6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/58F5GqfOMje69JMa2LIHD6",
+        "id" : "58F5GqfOMje69JMa2LIHD6",
+        "name" : "Many Voices Speak",
+        "type" : "artist",
+        "uri" : "spotify:artist:58F5GqfOMje69JMa2LIHD6"
+      } ],
+      "available_markets" : [ "CA", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7LPZuxY1SPxBwJ7THUdd0J"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7LPZuxY1SPxBwJ7THUdd0J",
+      "id" : "7LPZuxY1SPxBwJ7THUdd0J",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/cecb58c8325f7f86b58b930cf028eca8a32af427",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ee2bd08f24c5833096a0b8d12c629aa6b5b993e0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/10a92663c39b54dfaf200538bff70dbb830cadfb",
+        "width" : 64
+      } ],
+      "name" : "Blue Moon",
+      "type" : "album",
+      "uri" : "spotify:album:7LPZuxY1SPxBwJ7THUdd0J"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4DWnSG0RYPAds8EIKY26q3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4DWnSG0RYPAds8EIKY26q3",
+        "id" : "4DWnSG0RYPAds8EIKY26q3",
+        "name" : "Blue Stahli",
+        "type" : "artist",
+        "uri" : "spotify:artist:4DWnSG0RYPAds8EIKY26q3"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/25mMbVhvsiovoJTPyVGzoI"
+      },
+      "href" : "https://api.spotify.com/v1/albums/25mMbVhvsiovoJTPyVGzoI",
+      "id" : "25mMbVhvsiovoJTPyVGzoI",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/e8b03d1008a546289485f209126ab75f8d735b63",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/27d479c41fc1f32f7c909b4de8a972df6789221f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/39f01017d66550bd3db7171b2d47d73e85f8352f",
+        "width" : 64
+      } ],
+      "name" : "Blue Stahli",
+      "type" : "album",
+      "uri" : "spotify:album:25mMbVhvsiovoJTPyVGzoI"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4LLpKhyESsyAXpc4laK94U",
+        "id" : "4LLpKhyESsyAXpc4laK94U",
+        "name" : "Mac Miller",
+        "type" : "artist",
+        "uri" : "spotify:artist:4LLpKhyESsyAXpc4laK94U"
+      } ],
+      "available_markets" : [ "AD", "AR", "AU", "BG", "BO", "BR", "CA", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "GR", "GT", "HK", "HN", "HU", "ID", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/34Vqb2m74NU6Pb682ymHic"
+      },
+      "href" : "https://api.spotify.com/v1/albums/34Vqb2m74NU6Pb682ymHic",
+      "id" : "34Vqb2m74NU6Pb682ymHic",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6f70a606b85fdf2aec9258caece33d32650052f1",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/f21b2c5dea10febc6a4eed815da92786d48692b0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/9e09566c6f7ca49430a2f8e2a6b63efeea838bd0",
+        "width" : 64
+      } ],
+      "name" : "Blue Slide Park (Commentary Version)",
+      "type" : "album",
+      "uri" : "spotify:album:34Vqb2m74NU6Pb682ymHic"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5LhTec3c7dcqBvpLRWbMcf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5LhTec3c7dcqBvpLRWbMcf",
+        "id" : "5LhTec3c7dcqBvpLRWbMcf",
+        "name" : "Madlib",
+        "type" : "artist",
+        "uri" : "spotify:artist:5LhTec3c7dcqBvpLRWbMcf"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2yJg6KbkrE5SShCFWkmXhG"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2yJg6KbkrE5SShCFWkmXhG",
+      "id" : "2yJg6KbkrE5SShCFWkmXhG",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/0108f1b3388d6996995c0c684bb342d23834ec44",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/faf0a6ebb9b320a495cb3baf354db5047380c6f5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/bb6d580b0874ba2e6494bf0b3b07f49ca341d513",
+        "width" : 64
+      } ],
+      "name" : "Shades Of Blue: Madlib Invades Blue Note",
+      "type" : "album",
+      "uri" : "spotify:album:2yJg6KbkrE5SShCFWkmXhG"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/00tVTdpEhQQw1bqdu8RCx2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/00tVTdpEhQQw1bqdu8RCx2",
+        "id" : "00tVTdpEhQQw1bqdu8RCx2",
+        "name" : "Blue Öyster Cult",
+        "type" : "artist",
+        "uri" : "spotify:artist:00tVTdpEhQQw1bqdu8RCx2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7v4kEpVtppoMm80m43lGzt"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7v4kEpVtppoMm80m43lGzt",
+      "id" : "7v4kEpVtppoMm80m43lGzt",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/67852af99b7b8e53cbf190508b7a3a08c7f65b02",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/111f18fb874b728a1a9110bcdd79e7bfe16e0509",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/19a254d5a7bad0125cbc16f64961918ca515a86b",
+        "width" : 64
+      } ],
+      "name" : "Fire of Unknown Origin",
+      "type" : "album",
+      "uri" : "spotify:album:7v4kEpVtppoMm80m43lGzt"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1FWybrAwiSa0zKibdLfZZr"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1FWybrAwiSa0zKibdLfZZr",
+        "id" : "1FWybrAwiSa0zKibdLfZZr",
+        "name" : "Blue Foundation",
+        "type" : "artist",
+        "uri" : "spotify:artist:1FWybrAwiSa0zKibdLfZZr"
+      } ],
+      "available_markets" : [ "CA", "DK", "FI", "MX", "NO", "SE", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2NjMU3A1v9h4g1ukisTykJ"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2NjMU3A1v9h4g1ukisTykJ",
+      "id" : "2NjMU3A1v9h4g1ukisTykJ",
+      "images" : [ {
+        "height" : 600,
+        "url" : "https://i.scdn.co/image/22d23536d3d0e13ade5d2a295d0c60216c59a767",
+        "width" : 600
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/fbc183ae36ee635f27613f6a36115334a2c579cf",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/75cf903d0e37dc8791cc98e31a5db9416ab261a1",
+        "width" : 64
+      } ],
+      "name" : "Eyes On Fire",
+      "type" : "album",
+      "uri" : "spotify:album:2NjMU3A1v9h4g1ukisTykJ"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1FWybrAwiSa0zKibdLfZZr"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1FWybrAwiSa0zKibdLfZZr",
+        "id" : "1FWybrAwiSa0zKibdLfZZr",
+        "name" : "Blue Foundation",
+        "type" : "artist",
+        "uri" : "spotify:artist:1FWybrAwiSa0zKibdLfZZr"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5wFQEk3sV9Zjo3xnGZLS42"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5wFQEk3sV9Zjo3xnGZLS42",
+      "id" : "5wFQEk3sV9Zjo3xnGZLS42",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/83a62c352f491f3b333a1274c27109ddc9c73008",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/41b702ed31332bcb9f365c3f22543e4bdf5e890d",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c947a6b937911da2ba530ff22e9eff47ee218520",
+        "width" : 64
+      } ],
+      "name" : "Eyes On Fire (Zed Dead Remix)",
+      "type" : "album",
+      "uri" : "spotify:album:5wFQEk3sV9Zjo3xnGZLS42"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SlPJ2l80sMnCHpz1wB8nT"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SlPJ2l80sMnCHpz1wB8nT",
+        "id" : "1SlPJ2l80sMnCHpz1wB8nT",
+        "name" : "Blue Scholars",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SlPJ2l80sMnCHpz1wB8nT"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2epVE7UZnRSaCIJb0mjIPM"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2epVE7UZnRSaCIJb0mjIPM",
+      "id" : "2epVE7UZnRSaCIJb0mjIPM",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/26cac2b1a3ab0ab37658f2eff5a2756d243c8200",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/1612421b10db30debafcbdd4326784d59114ee18",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/15a645056628713c07ececa4133db6e95c750f7e",
+        "width" : 64
+      } ],
+      "name" : "Blue Scholars",
+      "type" : "album",
+      "uri" : "spotify:album:2epVE7UZnRSaCIJb0mjIPM"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6tbjWDEIzxoDsBA1FuhfPW"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6tbjWDEIzxoDsBA1FuhfPW",
+        "id" : "6tbjWDEIzxoDsBA1FuhfPW",
+        "name" : "Madonna",
+        "type" : "artist",
+        "uri" : "spotify:artist:6tbjWDEIzxoDsBA1FuhfPW"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6fmnT17jc2Sc69q3nza1eD"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6fmnT17jc2Sc69q3nza1eD",
+      "id" : "6fmnT17jc2Sc69q3nza1eD",
+      "images" : [ {
+        "height" : 632,
+        "url" : "https://i.scdn.co/image/6522e7fb4a27fc944cccb771c252c1f350612190",
+        "width" : 640
+      }, {
+        "height" : 296,
+        "url" : "https://i.scdn.co/image/efb8ae5606aa775c8b42ea54a3315a3e9e839da4",
+        "width" : 300
+      }, {
+        "height" : 63,
+        "url" : "https://i.scdn.co/image/2548dc0fe02d7c8d758595bd940d177918a37df5",
+        "width" : 64
+      } ],
+      "name" : "True Blue (Reissue)",
+      "type" : "album",
+      "uri" : "spotify:album:6fmnT17jc2Sc69q3nza1eD"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1I7oHjCjMrMUz66v67yJJu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1I7oHjCjMrMUz66v67yJJu",
+        "id" : "1I7oHjCjMrMUz66v67yJJu",
+        "name" : "Joshua Hyslop",
+        "type" : "artist",
+        "uri" : "spotify:artist:1I7oHjCjMrMUz66v67yJJu"
+      } ],
+      "available_markets" : [ "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2mjQ5iFpI8lCTXdXTZQU5J"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2mjQ5iFpI8lCTXdXTZQU5J",
+      "id" : "2mjQ5iFpI8lCTXdXTZQU5J",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/bf69256e106b156d1ba4b52cf80923b99a846bc4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/c13201a24f17bfab429d2dec34ba2fdefe383e91",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/2f1e4340932818f729ab17ac01913a2c29026849",
+        "width" : 64
+      } ],
+      "name" : "In Deepest Blue",
+      "type" : "album",
+      "uri" : "spotify:album:2mjQ5iFpI8lCTXdXTZQU5J"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/64tNsm6TnZe2zpcMVMOoHL"
+        },
+        "href" : "https://api.spotify.com/v1/artists/64tNsm6TnZe2zpcMVMOoHL",
+        "id" : "64tNsm6TnZe2zpcMVMOoHL",
+        "name" : "Alice In Chains",
+        "type" : "artist",
+        "uri" : "spotify:artist:64tNsm6TnZe2zpcMVMOoHL"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2vkLky2qG0rziUk0eOsIZ9"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2vkLky2qG0rziUk0eOsIZ9",
+      "id" : "2vkLky2qG0rziUk0eOsIZ9",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/7df191183b5c374e29e8e9ee862e3df032d827bf",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/f4698122e379ba4845ab28d4be8c3d55936295f0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/036ad63a9f99c73e9315e8ddf0ec6eca414b2fee",
+        "width" : 64
+      } ],
+      "name" : "Black Gives Way To Blue",
+      "type" : "album",
+      "uri" : "spotify:album:2vkLky2qG0rziUk0eOsIZ9"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7hJcb9fa4alzcOq3EaNPoG"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7hJcb9fa4alzcOq3EaNPoG",
+        "id" : "7hJcb9fa4alzcOq3EaNPoG",
+        "name" : "Snoop Dogg",
+        "type" : "artist",
+        "uri" : "spotify:artist:7hJcb9fa4alzcOq3EaNPoG"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5EyEI8tm60S6y2YKbjE0xI"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5EyEI8tm60S6y2YKbjE0xI",
+      "id" : "5EyEI8tm60S6y2YKbjE0xI",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/81fa334bab7f6af8116ba58ee90ad509bff9cb01",
+        "width" : 635
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/469694e2d964476179d01c6456e011b4e54ca8d3",
+        "width" : 298
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c1a61087aa77d4045b189b55ce2f4644d5a14080",
+        "width" : 63
+      } ],
+      "name" : "Tha Blue Carpet Treatment",
+      "type" : "album",
+      "uri" : "spotify:album:5EyEI8tm60S6y2YKbjE0xI"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0vn7UBvSQECKJm2817Yf1P"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0vn7UBvSQECKJm2817Yf1P",
+        "id" : "0vn7UBvSQECKJm2817Yf1P",
+        "name" : "James Taylor",
+        "type" : "artist",
+        "uri" : "spotify:artist:0vn7UBvSQECKJm2817Yf1P"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0h8hazllDADHsrSpcQCltk"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0h8hazllDADHsrSpcQCltk",
+      "id" : "0h8hazllDADHsrSpcQCltk",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/03656e21b1a2aca13dc320ed99ac917902900b59",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/9f53193398f0c8cb9a4d669ff7403eeca633445e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/9065fb410605c16ecbe63bbc94386b89d23002fc",
+        "width" : 64
+      } ],
+      "name" : "Mud Slide Slim And The Blue Horizon",
+      "type" : "album",
+      "uri" : "spotify:album:0h8hazllDADHsrSpcQCltk"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2fdQ8B09hC2nOUTor3PNJv"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2fdQ8B09hC2nOUTor3PNJv",
+        "id" : "2fdQ8B09hC2nOUTor3PNJv",
+        "name" : "Foil",
+        "type" : "artist",
+        "uri" : "spotify:artist:2fdQ8B09hC2nOUTor3PNJv"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6mVhZlZhp8JgoNhFQSwqMF"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6mVhZlZhp8JgoNhFQSwqMF",
+      "id" : "6mVhZlZhp8JgoNhFQSwqMF",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/f480bc9777bc75786b0d271f52e7eddf939198d5",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/e90feec6166333486b9531cbb13392136da99393",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/6d66f3239afe10c5a506c1541722fe4cb02af9fb",
+        "width" : 64
+      } ],
+      "name" : "Blue Scene",
+      "type" : "album",
+      "uri" : "spotify:album:6mVhZlZhp8JgoNhFQSwqMF"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6pDRa5fS3myWSP0fpIUcNl"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6pDRa5fS3myWSP0fpIUcNl",
+        "id" : "6pDRa5fS3myWSP0fpIUcNl",
+        "name" : "Evans Blue",
+        "type" : "artist",
+        "uri" : "spotify:artist:6pDRa5fS3myWSP0fpIUcNl"
+      } ],
+      "available_markets" : [ "CA", "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1qG8WqzACWlSwvJNzxsMmO"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1qG8WqzACWlSwvJNzxsMmO",
+      "id" : "1qG8WqzACWlSwvJNzxsMmO",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/c55c50d102a155d3115fd2ed1d1bfc1fe9d33e8e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/2d8785f93d0dc0c86f6dc068da0e8e0a84a92364",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/77ffb4577d19959ed5f168f70fc40939c4615b6e",
+        "width" : 64
+      } ],
+      "name" : "The Melody And The Energetic Nature Of Volume",
+      "type" : "album",
+      "uri" : "spotify:album:1qG8WqzACWlSwvJNzxsMmO"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5g3uG8zZZANGT6YOssgjfC"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5g3uG8zZZANGT6YOssgjfC",
+        "id" : "5g3uG8zZZANGT6YOssgjfC",
+        "name" : "Lenka",
+        "type" : "artist",
+        "uri" : "spotify:artist:5g3uG8zZZANGT6YOssgjfC"
+      } ],
+      "available_markets" : [ "AD", "AR", "AU", "BG", "BO", "BR", "CA", "CL", "CO", "CR", "CZ", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "JP", "LI", "LT", "LV", "MC", "MT", "MX", "NI", "NO", "NZ", "PA", "PE", "PL", "PT", "PY", "SE", "SK", "SV", "TR", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0kkBJyIlvu9I2NqpgPS4xq"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0kkBJyIlvu9I2NqpgPS4xq",
+      "id" : "0kkBJyIlvu9I2NqpgPS4xq",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/4502530e585cd0d0df52d934a6b08470057990a1",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/d5821252689f16145445db606ff6b6af85b83d31",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c3fe4142b3ec06cc60efd0f1db719fdca897bf44",
+        "width" : 64
+      } ],
+      "name" : "Blue Skies - The Remixes",
+      "type" : "album",
+      "uri" : "spotify:album:0kkBJyIlvu9I2NqpgPS4xq"
+    } ],
+    "limit" : 50,
+    "next" : "https://api.spotify.com/v1/search?query=blue&offset=50&limit=50&type=album",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 21196
+  }
+}
