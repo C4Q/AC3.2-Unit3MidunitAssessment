@@ -9,7 +9,7 @@
 import Foundation
 
 internal class APIRequestManager {
-	private static let albumAPIEndpoint: URL = URL(string: "https://api.spotify.com/v1/search?q=bat%20out%20of%20hell&type=album&limit=50")!
+	private static let albumAPIEndpoint: URL = URL(string: "https://api.spotify.com/v1/search?q=meat%20loaf&type=album&limit=50")!
 	
 	internal static let manager: APIRequestManager = APIRequestManager()
 	private init() {}
@@ -29,4 +29,19 @@ internal class APIRequestManager {
 			
 			}.resume()
 	}
+	
+	func downloadImage(urlString: String, callback: @escaping (Data) -> () ) {
+		
+		guard let imageURL = URL(string: urlString) else { return }
+		let session = URLSession.shared
+		session.dataTask(with: imageURL) { (data: Data?, response: URLResponse?, error: Error?) in
+			if error != nil {
+				print("Error encountered!: \(error!)")
+			}
+			guard let imageData = data else { return }
+			callback(imageData)
+			
+			}.resume()
+	}
+
 }

@@ -74,29 +74,17 @@ class SpotifyTableViewController: UITableViewController {
 		}
 		
 		let albumAtRow = albumsByArtist.sorted() { $0.albumName < $1.albumName } [indexPath.row]
-
-		var image: UIImage?
-		var data: Data?
-		
-		//1. Create a url from the string of the url
-		let url = URL(string: albumAtRow.thumbURL)
-		
-		//2. Create a data object out of the url
-		if let unwrappedURL = url {
-			data = try? Data(contentsOf: unwrappedURL)
-		}
-		
-		//3. Create an image out of the data object created
-		if let realData = data {
-			image = UIImage(data: realData)
-		}
-		
 		cell.textLabel?.text = albumAtRow.albumName
 		cell.detailTextLabel?.text = albumAtRow.artistName
-		cell.imageView?.image = image
 		
+		APIRequestManager.manager.downloadImage(urlString: albumAtRow.thumbURL) { (returnedData: Data) in
+			DispatchQueue.main.async {
+				cell.imageView?.image = UIImage(data: returnedData)
+				cell.setNeedsLayout()
+			}
+		}
 		return cell
-	}
+	}	
 	
 	// MARK: - Navigation
 	
