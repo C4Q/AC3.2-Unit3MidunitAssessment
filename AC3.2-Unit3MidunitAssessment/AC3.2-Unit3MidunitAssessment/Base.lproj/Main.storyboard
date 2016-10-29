@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,17 +31,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Lha-MH-ZSg">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="Yg4-gl-lef">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7bC-Rh-e7k">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Refresh"/>
-                                <connections>
-                                    <action selector="refreshPressed:" destination="HYS-6h-bf9" eventType="touchUpInside" id="ywc-lR-edJ"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="x3U-UK-ogg">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7tc-9x-uoB">
                                 <rect key="frame" x="281" y="10" width="78" height="24"/>
@@ -75,36 +65,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jHq-H4-a6X">
-                                <frame key="frameInset" minX="74" minY="251" width="230" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter something to search for and press enter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTo-7w-6L7">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter something to search for and press enter. Then go back to tableview and press refresh." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTo-7w-6L7">
-                                <frame key="frameInset" minX="74" minY="98" width="230" height="145"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of results: 50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPI-70-NdF">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-zO-S3G">
-                                <frame key="frameInset" minX="72" minY="404" width="234" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-zO-S3G">
                                 <connections>
                                     <action selector="sliderDidChange:" destination="GBD-4J-1qc" eventType="valueChanged" id="i4D-db-FcE"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of results: 50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPI-70-NdF">
-                                <frame key="frameInset" minX="74" minY="375" width="239" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jHq-H4-a6X">
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rPI-70-NdF" firstAttribute="centerX" secondItem="xtq-Kb-Ro9" secondAttribute="centerX" id="3HI-Uz-2dP"/>
+                            <constraint firstItem="rPI-70-NdF" firstAttribute="leading" secondItem="xtq-Kb-Ro9" secondAttribute="leadingMargin" id="73x-kW-jbu"/>
+                            <constraint firstItem="jHq-H4-a6X" firstAttribute="top" secondItem="hTo-7w-6L7" secondAttribute="bottom" constant="8" id="Ci8-zJ-0Fl"/>
+                            <constraint firstItem="hTo-7w-6L7" firstAttribute="top" secondItem="rPI-70-NdF" secondAttribute="bottom" constant="20" id="Gyg-z9-fAZ"/>
+                            <constraint firstItem="rPI-70-NdF" firstAttribute="top" secondItem="ohf-zO-S3G" secondAttribute="bottom" constant="8" id="UMJ-uW-MWC"/>
+                            <constraint firstItem="hTo-7w-6L7" firstAttribute="leading" secondItem="xtq-Kb-Ro9" secondAttribute="leadingMargin" id="UX2-BK-f53"/>
+                            <constraint firstItem="jHq-H4-a6X" firstAttribute="top" secondItem="hTo-7w-6L7" secondAttribute="bottom" constant="8" id="WJk-wY-dOh"/>
+                            <constraint firstItem="ohf-zO-S3G" firstAttribute="leading" secondItem="xtq-Kb-Ro9" secondAttribute="leadingMargin" constant="8" id="eT0-Lc-TRN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ohf-zO-S3G" secondAttribute="trailing" constant="8" id="fiE-0Z-kcG"/>
+                            <constraint firstItem="ohf-zO-S3G" firstAttribute="centerX" secondItem="xtq-Kb-Ro9" secondAttribute="centerX" id="gab-np-vwK"/>
+                            <constraint firstItem="jHq-H4-a6X" firstAttribute="centerX" secondItem="xtq-Kb-Ro9" secondAttribute="centerX" id="koD-8u-sVK"/>
+                            <constraint firstItem="hTo-7w-6L7" firstAttribute="centerX" secondItem="xtq-Kb-Ro9" secondAttribute="centerX" id="l3o-wp-KR0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rPI-70-NdF" secondAttribute="trailing" id="pDo-fG-szl"/>
+                            <constraint firstItem="ohf-zO-S3G" firstAttribute="top" secondItem="xfE-y4-8QK" secondAttribute="bottom" constant="20" id="pJ9-Pf-WUY"/>
+                            <constraint firstItem="hTo-7w-6L7" firstAttribute="trailing" secondItem="xtq-Kb-Ro9" secondAttribute="trailingMargin" id="sP4-Fh-Kpz"/>
+                            <constraint firstItem="jHq-H4-a6X" firstAttribute="leading" secondItem="xtq-Kb-Ro9" secondAttribute="leadingMargin" id="t7B-7u-bnB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jHq-H4-a6X" secondAttribute="trailing" id="vxs-Zt-KxV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="resultsLabel" destination="rPI-70-NdF" id="XBZ-Jc-0kd"/>

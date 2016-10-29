@@ -15,17 +15,17 @@ class AlbumsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadTableViewData()
-        
-        //couldn't get this pull down refresh to work so did it with a button
-        self.refreshControl?.addTarget(self, action: #selector(refreshRequested(_:)), for: .valueChanged)
+
     }
     
-    func refreshRequested(_ sender: UIRefreshControl) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
         loadTableViewData()
     }
 
     func loadTableViewData() {
-        navigationItem.title = SearchManager.manager.searcWord
+        navigationItem.title = SearchManager.manager.searchTitle
         let myEndpoint = SearchManager.manager.searchString
         APIHelper.manager.getData(endPoint: myEndpoint) { (data: Data?) in
             guard let unwrappedData = data else { return }
@@ -50,7 +50,6 @@ class AlbumsTableViewController: UITableViewController {
         return albums.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AlbumCellIdentifyer", for: indexPath)
         let thisAlbum = albums[indexPath.row]
@@ -77,11 +76,5 @@ class AlbumsTableViewController: UITableViewController {
             }
         }
     }
-    
-    
-    @IBAction func refreshPressed(_ sender: UIButton) {
-        loadTableViewData()
-    }
-    
-    
+
 }

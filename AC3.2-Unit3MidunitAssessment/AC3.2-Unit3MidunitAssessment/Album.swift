@@ -13,10 +13,10 @@ enum SpotifyAlbumParseError: Error {
     case email(json: AnyObject)
 }
 
-
 struct SetOfImages {
     let thumnail: String
-    let fullsize: String
+    let medium: String
+    let full: String
 }
 
 class Album {
@@ -29,7 +29,6 @@ class Album {
         self.artistName = artistName
         self.Images = images
     }
-    
     
     static func buildAlbumArray(from data: Data) -> [Album]? {
         do {
@@ -51,25 +50,35 @@ class Album {
                 guard let imageArray = albumDict["images"] as? [[String: Any]] else { return nil }
                 print("555555555 got an image array")
                 
-                guard let thumbnailString = imageArray[2]["url"] as? String else { return nil }
-                guard let mediumImageString = imageArray[1]["url"] as? String else { return nil }
+                var thumbnailString: String = ""
+                var mediumString: String = ""
+                var fullString: String = ""
+                
+                if imageArray.count > 2 {
+                    thumbnailString = imageArray[2]["url"] as? String ?? ""
+                }
+                if imageArray.count > 1 {
+                    mediumString = imageArray[1]["url"] as? String ?? ""
+                }
+                if imageArray.count > 0 {
+                    fullString = imageArray[0]["url"] as? String ?? ""
+                }
+                
                 print("6666666666 got image strings")
                 
-                let theseImages = SetOfImages(thumnail: thumbnailString, fullsize: mediumImageString)
+                let theseImages = SetOfImages(thumnail: thumbnailString, medium: mediumString, full: fullString)
                 
                 guard let artistArray = albumDict["artists"] as? [[String: Any]] else { return nil }
                 print("7777777777 got an artist array")
                 guard let artistName = artistArray[0]["name"] as? String else { return nil}
                 print("888888888 got artist string")
 
-                
                 let thisAlbum = Album(albumName: thisAlbumName, artistName: artistName, images: theseImages)
                 
                 allTheAlbums.append(thisAlbum)
-                
             }
             return allTheAlbums
-        
+            
         }
         catch let error as NSError {
             print("Error occurred while parsing data: \(error.localizedDescription)")
@@ -78,5 +87,4 @@ class Album {
         return nil
     }
 
-    
 }

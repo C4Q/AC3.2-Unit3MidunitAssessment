@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SearchSettingsDelegate {
-    func updateSearchString(newSearchWord: String, numberOfResults: String)
+    func updateSearch(newSearchWord: String, numberOfResults: String)
 }
 
 class SearchSettingsViewController: UIViewController, UITextFieldDelegate {
@@ -20,36 +20,38 @@ class SearchSettingsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var resultsSlider: UISlider!
     
-    var numberOfRestuls = "50"
-    var currentSearchWord = "blue"
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         searchWordTextField.delegate = self
-        searchWordTextField.text = SearchManager.manager.searcWord
-
-        // Do any additional setup after loading the view.
+        loadSettingsPage()
+        
     }
     
+    func loadSettingsPage() {
+        searchWordTextField.text = SearchManager.manager.searchTitle
+        resultsSlider.value = Float(SearchManager.manager.numberOfResults)!
+        resultsLabel.text = "Number of results: \(SearchManager.manager.numberOfResults)"
+        
+    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let allTextFieldText = textField.text ?? "blue"
         let newSearchWord = allTextFieldText.replacingOccurrences(of: " ", with: "%20")
         // tried to do this using a delegate but got stuck so updating manager directly 
         //self.delegate?.updateSearchString(newSearchWord: newSearchWord)
-        self.currentSearchWord = newSearchWord
-        SearchManager.manager.updateSearchString(newSearchWord: newSearchWord, numberOfResults: self.numberOfRestuls)
+        SearchManager.manager.updateSearch(newSearchWord: newSearchWord, numberOfResults: SearchManager.manager.numberOfResults)
          print("*********************************" + newSearchWord)
+        loadSettingsPage()
+        let _ = self.navigationController?.popViewController(animated: true)
+        
         return true
     }
     
     
     @IBAction func sliderDidChange(_ sender: UISlider) {
-        resultsLabel.text = "Number of results: \(String(Int(sender.value)))"
-        self.numberOfRestuls = String(Int(sender.value))
-        SearchManager.manager.updateSearchString(newSearchWord: currentSearchWord, numberOfResults: self.numberOfRestuls)
+        SearchManager.manager.updateSearch(newSearchWord: SearchManager.manager.searchWord, numberOfResults: String(Int(sender.value)))
+        loadSettingsPage()
         
     }
 

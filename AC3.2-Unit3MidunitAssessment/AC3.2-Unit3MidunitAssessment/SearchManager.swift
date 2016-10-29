@@ -15,12 +15,23 @@ class SearchManager: SearchSettingsDelegate  {
     private init() {}
     
     var searchString: String = "https://api.spotify.com/v1/search?q=blue&type=album&limit=50"
-    var searcWord: String = "blue"
+    var searchWord: String = "blue"
+    var searchTitle: String {
+        let searchWords = searchWord.replacingOccurrences(of: "%20", with: " ")
+        let titleArray = searchWords.components(separatedBy: " ")
+        var searchTitle = ""
+        for word in titleArray {
+            searchTitle += word.capitalized
+            searchTitle += " "
+        }
+        searchTitle = String(searchTitle.characters.dropLast(1))
+        return searchTitle
+    }
     var numberOfResults = "50"
     
-    func updateSearchString(newSearchWord: String, numberOfResults: String) {
+    func updateSearch(newSearchWord: String, numberOfResults: String) {
         self.searchString = "https://api.spotify.com/v1/search?q=\(newSearchWord)&type=album&limit=\(numberOfResults)"
-        self.searcWord = newSearchWord
+        self.searchWord = newSearchWord
         self.numberOfResults = numberOfResults
         
         print("this is the new search string........................\n\(self.searchString))")
