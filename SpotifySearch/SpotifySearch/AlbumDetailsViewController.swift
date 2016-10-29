@@ -18,7 +18,7 @@ class AlbumDetailsViewController: UIViewController {
         albumCoverImageView.downloadImage(from: (album?.image ?? nil)!)
         artistNameLabel.text = "Artist: \((album?.artist)!)"
         self.title = album?.name
-        
+        self.navigationController?.navigationBar.tintColor = .white
         
         
     }

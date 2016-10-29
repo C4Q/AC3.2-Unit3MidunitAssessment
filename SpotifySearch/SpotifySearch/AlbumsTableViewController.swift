@@ -16,19 +16,10 @@ class AlbumsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.backgroundColor = .green
-        
+        //self.navigationController?.navigationBar.backgroundColor = .green
         self.title = "Spotify Search"
-        APIRequestManager.manager.getData(from: AlbumsEndpoint) { (data) in
-            guard let validData = data else{ return}
-            guard let validAlbums = Album.createObj(data: validData) else {return}
-            
-            self.albums = validAlbums
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-        
+        self.refreshControl?.addTarget(self, action: #selector(self.refreshRequested(_:)), for: .valueChanged)
+        loadAlbums()
     }
 
    
@@ -76,6 +67,23 @@ class AlbumsTableViewController: UITableViewController {
     }
     
     
+    //Load albums
+    fileprivate func loadAlbums(){
+        APIRequestManager.manager.getData(from: AlbumsEndpoint) { (data) in
+            guard let validData = data else{return}
+            guard let validAlbums = Album.createObj(data: validData) else {return}
+            
+            self.albums = validAlbums
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.refreshControl?.endRefreshing()
+            }
+        }
+
+    }
     
+    func refreshRequested(_ sender: UIRefreshControl){
+        loadAlbums()
+    }
 
 }
