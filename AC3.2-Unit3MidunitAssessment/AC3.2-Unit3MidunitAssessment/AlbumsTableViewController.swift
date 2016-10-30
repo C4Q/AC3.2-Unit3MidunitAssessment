@@ -15,7 +15,6 @@ class AlbumsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadTableViewData()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,7 +28,7 @@ class AlbumsTableViewController: UITableViewController {
         let myEndpoint = SearchManager.manager.searchString
         APIHelper.manager.getData(endPoint: myEndpoint) { (data: Data?) in
             guard let unwrappedData = data else { return }
-            self.albums = Album.buildAlbumArray(from: unwrappedData)!
+            self.albums = AlbumFactory.buildAlbumArray(from: unwrappedData)!
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -41,12 +40,10 @@ class AlbumsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return albums.count
     }
 

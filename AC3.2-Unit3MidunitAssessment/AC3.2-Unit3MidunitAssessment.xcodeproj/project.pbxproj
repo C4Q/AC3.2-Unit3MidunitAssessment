@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE07FB7B1DC68C7000B071C6 /* AlbumFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE07FB7A1DC68C7000B071C6 /* AlbumFactory.swift */; };
 		DE5C08071DC39B5300CC1D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C08061DC39B5300CC1D84 /* AppDelegate.swift */; };
 		DE5C080C1DC39B5300CC1D84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5C080A1DC39B5300CC1D84 /* Main.storyboard */; };
 		DE5C080E1DC39B5300CC1D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C080D1DC39B5300CC1D84 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE07FB7A1DC68C7000B071C6 /* AlbumFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumFactory.swift; sourceTree = "<group>"; };
 		DE5C08031DC39B5300CC1D84 /* AC3.2-Unit3MidunitAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC3.2-Unit3MidunitAssessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5C08061DC39B5300CC1D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5C080B1DC39B5300CC1D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,10 +47,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE07FB771DC55B4500B071C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C08181DC39BFA00CC1D84 /* AlbumsTableViewController.swift */,
+				DE5C081E1DC3A8EA00CC1D84 /* AlbumDetailViewController.swift */,
+				DE5C08221DC3B73B00CC1D84 /* SearchSettingsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DE07FB781DC55B7000B071C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C081A1DC39CA400CC1D84 /* Album.swift */,
+				DE07FB7A1DC68C7000B071C6 /* AlbumFactory.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DE07FB791DC55B8600B071C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C08061DC39B5300CC1D84 /* AppDelegate.swift */,
+				DE5C080D1DC39B5300CC1D84 /* Assets.xcassets */,
+				DE5C080F1DC39B5300CC1D84 /* LaunchScreen.storyboard */,
+				DE5C08121DC39B5300CC1D84 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE07FB7C1DC68C7A00B071C6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C081C1DC39E9F00CC1D84 /* APIHelper.swift */,
+				DE5C08201DC3B5EF00CC1D84 /* SearchManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		DE5C07FA1DC39B5300CC1D84 = {
 			isa = PBXGroup;
 			children = (
 				DE5C08051DC39B5300CC1D84 /* AC3.2-Unit3MidunitAssessment */,
+				DE5C080A1DC39B5300CC1D84 /* Main.storyboard */,
 				DE5C08041DC39B5300CC1D84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,17 +106,10 @@
 		DE5C08051DC39B5300CC1D84 /* AC3.2-Unit3MidunitAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				DE5C08181DC39BFA00CC1D84 /* AlbumsTableViewController.swift */,
-				DE5C081E1DC3A8EA00CC1D84 /* AlbumDetailViewController.swift */,
-				DE5C081A1DC39CA400CC1D84 /* Album.swift */,
-				DE5C081C1DC39E9F00CC1D84 /* APIHelper.swift */,
-				DE5C08201DC3B5EF00CC1D84 /* SearchManager.swift */,
-				DE5C08221DC3B73B00CC1D84 /* SearchSettingsViewController.swift */,
-				DE5C08061DC39B5300CC1D84 /* AppDelegate.swift */,
-				DE5C080A1DC39B5300CC1D84 /* Main.storyboard */,
-				DE5C080D1DC39B5300CC1D84 /* Assets.xcassets */,
-				DE5C080F1DC39B5300CC1D84 /* LaunchScreen.storyboard */,
-				DE5C08121DC39B5300CC1D84 /* Info.plist */,
+				DE07FB791DC55B8600B071C6 /* Supporting Files */,
+				DE07FB7C1DC68C7A00B071C6 /* Managers */,
+				DE07FB781DC55B7000B071C6 /* Model */,
+				DE07FB771DC55B4500B071C6 /* ViewControllers */,
 			);
 			path = "AC3.2-Unit3MidunitAssessment";
 			sourceTree = "<group>";
@@ -157,6 +192,7 @@
 				DE5C08211DC3B5EF00CC1D84 /* SearchManager.swift in Sources */,
 				DE5C08231DC3B73B00CC1D84 /* SearchSettingsViewController.swift in Sources */,
 				DE5C08191DC39BFA00CC1D84 /* AlbumsTableViewController.swift in Sources */,
+				DE07FB7B1DC68C7000B071C6 /* AlbumFactory.swift in Sources */,
 				DE5C081B1DC39CA400CC1D84 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +206,7 @@
 				DE5C080B1DC39B5300CC1D84 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "AC3.2-Unit3MidunitAssessment";
 			sourceTree = "<group>";
 		};
 		DE5C080F1DC39B5300CC1D84 /* LaunchScreen.storyboard */ = {
@@ -319,6 +356,7 @@
 				DE5C08171DC39B5300CC1D84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

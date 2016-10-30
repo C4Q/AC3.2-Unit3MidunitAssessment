@@ -20,19 +20,16 @@ class SearchSettingsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var resultsSlider: UISlider!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchWordTextField.delegate = self
         loadSettingsPage()
-        
     }
     
     func loadSettingsPage() {
         searchWordTextField.text = SearchManager.manager.searchTitle
         resultsSlider.value = Float(SearchManager.manager.numberOfResults)!
         resultsLabel.text = "Number of results: \(SearchManager.manager.numberOfResults)"
-        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -48,12 +45,9 @@ class SearchSettingsViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    
     @IBAction func sliderDidChange(_ sender: UISlider) {
         SearchManager.manager.updateSearch(newSearchWord: SearchManager.manager.searchWord, numberOfResults: String(Int(sender.value)))
         loadSettingsPage()
-        
     }
 
-    
 }

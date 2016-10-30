@@ -31,7 +31,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Lha-MH-ZSg">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="x3U-UK-ogg">
+                        <barButtonItem key="rightBarButtonItem" id="x3U-UK-ogg">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7tc-9x-uoB">
                                 <rect key="frame" x="281" y="10" width="78" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -115,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4Y-n9-K7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2165.5999999999999" y="-225.33733133433284"/>
+            <point key="canvasLocation" x="2074" y="-80"/>
         </scene>
         <!--Album Detail View Controller-->
         <scene sceneID="B74-SX-gHN">
@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joU-UJ-0fZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170" y="506"/>
+            <point key="canvasLocation" x="2870" y="274"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gdM-t5-9pw">
