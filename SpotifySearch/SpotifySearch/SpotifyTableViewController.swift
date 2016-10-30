@@ -8,28 +8,28 @@
 
 import UIKit
 
-class SpotifyTableViewController: UITableViewController {
+class SpotifyTableViewController: UITableViewController, UITextFieldDelegate {
 	
 	var albums = [SpotifyAlbum]()
 	var artistDict = [String : Int]()
 	var artistArray = [String]()
 	
+	@IBOutlet weak var searchField: UITextField!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadAlbums()
+		self.searchField.delegate = self
 	}
 	
-	internal func loadAlbums() {
-		APIRequestManager.manager.getAlbumData { (data) in
+	internal func loadAlbums(searchString: String = "Meat Loaf") {
+		APIRequestManager.manager.getAlbumData(searchString: searchString) { (data) in
 			if data != nil {
 				
 				if let albums = SpotifyAlbum.albums(from: data!) {
 					print("We've got albums! \(albums)")
-					
 					self.albums = albums
-					
 					self.countArtists()
-					
 					DispatchQueue.main.async {
 						self.tableView.reloadData()
 					}
@@ -39,6 +39,7 @@ class SpotifyTableViewController: UITableViewController {
 	}
 	
 	func countArtists() {
+		artistDict = [String : Int]()
 		for album in albums {
 			artistDict[album.artistName] = 1
 		}
@@ -59,6 +60,7 @@ class SpotifyTableViewController: UITableViewController {
 		let albumsByArtist = albums.filter { (album) -> Bool in
 			(album.artistName) == artistArray[section]
 		}
+		
 		return albumsByArtist.count
 	}
 	
@@ -83,8 +85,9 @@ class SpotifyTableViewController: UITableViewController {
 				cell.setNeedsLayout()
 			}
 		}
+		
 		return cell
-	}	
+	}
 	
 	// MARK: - Navigation
 	
@@ -101,10 +104,20 @@ class SpotifyTableViewController: UITableViewController {
 				}
 				
 				let albumAtRow = albumsByArtist.sorted() { $0.albumName < $1.albumName } [cellIndexPath.row]
-			
+				
 				detailedImage.albumSelected = albumAtRow
 			}
 		}
 	}
 	
+	// MARK: - Textfield Stuff
+	
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		self.view.endEditing(true)
+		if let search = searchField.text {
+		loadAlbums(searchString: search)
+		}
+		
+		return true
+	}
 }

@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Meat Loaf-->
+        <!--Spotify Table View Controller-->
         <scene sceneID="1kB-2g-4I9">
             <objects>
                 <tableViewController id="WPh-Uj-Wuz" customClass="SpotifyTableViewController" customModule="SpotifySearch" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumCell" textLabel="7zs-pn-KoM" detailTextLabel="R9X-K2-EGS" imageView="0Hf-0f-NtO" style="IBUITableViewCellStyleSubtitle" id="AVH-aW-Ga9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumCell" textLabel="7zs-pn-KoM" imageView="0Hf-0f-NtO" style="IBUITableViewCellStyleDefault" id="AVH-aW-Ga9">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AVH-aW-Ga9" id="2TF-0s-RJv">
@@ -24,20 +24,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7zs-pn-KoM">
-                                            <frame key="frameInset" minX="73" minY="4" width="34" height="21"/>
+                                            <frame key="frameInset" minX="73" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R9X-K2-EGS">
-                                            <frame key="frameInset" minX="73" minY="25" width="44" height="15"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="placeholder" id="0Hf-0f-NtO">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="placeholder" id="0Hf-0f-NtO">
                                             <frame key="frameInset" minX="15" width="43" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -53,11 +46,24 @@
                             <outlet property="delegate" destination="WPh-Uj-Wuz" id="FMA-0J-xRU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Meat Loaf" id="KUT-dS-yFJ"/>
+                    <navigationItem key="navigationItem" id="KUT-dS-yFJ">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="Back to Album Search" id="RrL-T3-hNF"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Meat Loaf" borderStyle="roundedRect" placeholder="Album Search" textAlignment="natural" minimumFontSize="17" id="bDO-xE-Xnt">
+                            <rect key="frame" x="8" y="7" width="359" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchField" destination="bDO-xE-Xnt" id="MJ6-mn-35E"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gmj-X2-iED" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="20"/>
+            <point key="canvasLocation" x="812" y="19.340329835082461"/>
         </scene>
         <!--Album Image View Controller-->
         <scene sceneID="xPq-iA-gzy">
