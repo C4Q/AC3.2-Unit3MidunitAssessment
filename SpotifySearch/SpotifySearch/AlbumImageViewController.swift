@@ -20,22 +20,29 @@ class AlbumImageViewController: UIViewController {
 	}
 	
 	func loadData() {
-		var image: UIImage?
-		var data: Data?
+//		var image: UIImage?
+//		var data: Data?
 		
-		//1. Create a url from the string of the url
-		let url = URL(string: albumSelected.imageURL)
+//		//1. Create a url from the string of the url
+//		let url = URL(string: albumSelected.images.full)
+//		
+//		//2. Create a data object out of the url
+//		if let unwrappedURL = url {
+//			data = try? Data(contentsOf: unwrappedURL)
+//		}
+//		
+//		//3. Create an image out of the data object created
+//		if let realData = data {
+//			image = UIImage(data: realData)
+//		}
+//		
+//		albumImage.image = image
 		
-		//2. Create a data object out of the url
-		if let unwrappedURL = url {
-			data = try? Data(contentsOf: unwrappedURL)
+		APIRequestManager.manager.downloadImage(urlString: albumSelected.images.full) { (returnedData: Data) in
+			DispatchQueue.main.async {
+				self.albumImage.image = UIImage(data: returnedData)
+				self.view.setNeedsLayout()
+			}
 		}
-		
-		//3. Create an image out of the data object created
-		if let realData = data {
-			image = UIImage(data: realData)
-		}
-		
-		albumImage.image = image
 	}
 }

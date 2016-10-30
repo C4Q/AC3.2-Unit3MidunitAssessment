@@ -9,15 +9,18 @@
 import Foundation
 
 internal enum AlbumModelParseError: Error {
-	case results, artist, album, image, imageBig, imageThumb
+	case results, artist, album, image//, imageBig, imageThumb
+}
+
+internal struct AvailableImages {
+	let thumbnail: String
+	let full: String
 }
 
 internal struct SpotifyAlbum {
-	
 	let artistName: String
 	let albumName: String
-	let imageURL: String
-	let thumbURL: String
+	let images: AvailableImages
 	
 	static func albums(from data: Data) -> [SpotifyAlbum]? {
 		var albumsToReturn: [SpotifyAlbum]? = []
@@ -57,6 +60,8 @@ internal struct SpotifyAlbum {
 						throw AlbumModelParseError.image
 				}
 				
+				// The below code is deprecated because of empty array API returns
+				/*
 				guard let imageURL: String = images[0]["url"] as? String
 					else {
 						throw AlbumModelParseError.imageBig
@@ -66,11 +71,26 @@ internal struct SpotifyAlbum {
 					else {
 						throw AlbumModelParseError.imageThumb
 				}
+				*/
+
+				var smallestImage = String()
+				var biggestImage = String()
+				
+				if images.count > 2 {
+					smallestImage = images[2]["url"] as? String ?? ""
+				} else if images.count > 1 {
+					smallestImage = images[1]["url"] as? String ?? ""
+				}
+				
+				if images.count > 0 {
+					biggestImage = images[0]["url"] as? String ?? ""
+				}
+				
+				let imageStruct = AvailableImages(thumbnail: smallestImage, full: biggestImage)
 				
 				let validAlbum: SpotifyAlbum = SpotifyAlbum(artistName: artistName,
 				                                            albumName: albumName,
-				                                            imageURL: imageURL,
-				                                            thumbURL: thumbURL)
+				                                            images: imageStruct)
 				
 				albumsToReturn?.append(validAlbum)
 			}

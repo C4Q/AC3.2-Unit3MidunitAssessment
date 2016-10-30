@@ -79,7 +79,7 @@ class SpotifyTableViewController: UITableViewController, UITextFieldDelegate {
 		cell.textLabel?.text = albumAtRow.albumName
 		cell.detailTextLabel?.text = albumAtRow.artistName
 		
-		APIRequestManager.manager.downloadImage(urlString: albumAtRow.thumbURL) { (returnedData: Data) in
+		APIRequestManager.manager.downloadImage(urlString: albumAtRow.images.thumbnail) { (returnedData: Data) in
 			DispatchQueue.main.async {
 				cell.imageView?.image = UIImage(data: returnedData)
 				cell.setNeedsLayout()
