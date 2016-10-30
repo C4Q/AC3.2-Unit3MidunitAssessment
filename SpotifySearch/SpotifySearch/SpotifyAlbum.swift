@@ -21,12 +21,12 @@ struct SpotifyAlbum {
                 return nil
             }
             print("Spotify data was casted")
-            guard let spotifyInfoWithinThisKey: Any = spotifyAlbumsCasted["albums"] else {
+            guard let spotifyInfoWithinThisKey: Any = spotifyAlbumsCasted["items"] else {
                 print("there was an error casting to any for [String:Any] \(spotifyAlbumsCasted)")
                 return nil
             }
             print("we were able to get in to the info \(spotifyInfoWithinThisKey)")
-            guard let arrayOfSpotifyAlbumObject: [AnyObject] = spotifyAlbumsCasted["albums"]?["items"] as? [AnyObject] else {
+            guard let arrayOfSpotifyAlbumObject: [AnyObject] = spotifyAlbumsCasted["items"] as? [AnyObject] else {
                 return nil
             }
             
