@@ -60,20 +60,36 @@ class AlbumFactory {
     internal func getAlbums(from jsonData: Data) -> [Album]? {
         
         do {
-            let AlbumJSONData: Any = try JSONSerialization.jsonObject(with: jsonData, options: [])
+            let jsonData = try JSONSerialization.jsonObject(with: jsonData, options: [])
+            guard let jsonUnwrapped = jsonData as? [String: Any]
+                else {
+                    print("JSON error")
+                    return nil
+            }
             
-            guard let AlbumJSONCasted: [String : AnyObject] = AlbumJSONData as? [String : AnyObject],
-                let AlbumArray: [AnyObject] = AlbumJSONCasted["albums"] as? [AnyObject] else {
+            guard let albumsUnwrapped = jsonUnwrapped["albums"] as? [String:Any]
+                else {
+                    print("Albums error")
+                    return nil
+            }
+            
+            guard let itemsUnwrapped = albumsUnwrapped["items"] as? [[String: Any]]
+                else {
+                    print("Items error")
                     return nil
             }
             
             var Albums: [Album] = []
-            AlbumArray.forEach({ AlbumObject in
-                guard let items : [String : String] = AlbumObject["items"] as? [String : String],
-                let AlbumName:  String  = items["name"]
-                                        else { return }
-                Albums.append(Album(albumName: AlbumName))
-            })
+
+            for albumDictionary in itemsUnwrapped {
+                guard let albumName = albumDictionary["name"] as? String else {
+                    print("Album name error")
+                    
+                    return nil
+                }
+                Albums.append(Album(albumName: albumName))
+                
+            }
             
             return Albums
         }
