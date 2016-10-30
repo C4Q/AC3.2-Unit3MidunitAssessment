@@ -31,9 +31,14 @@ internal struct Album {
                     //let thumbnailURL: String = images[2]["url"] as? String,
                     //let fullImageURL: String = images[1]["url"] as? String
                     
-                    else { return }
+                    else {
+                        
+                       print("error")
+                        return
+                }
                 
                 allAlbums.append(Album(albumTitle: name, albumArrayImages: images))
+                
                 
             })
         } catch _ as NSError {

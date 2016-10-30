@@ -11,6 +11,7 @@ import UIKit
 class SpotifyTableViewController: UITableViewController {
     internal var albums = [Album]()
     internal var images = [String]()
+    internal let randStrings = ["hi", "there"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,12 +66,13 @@ class SpotifyTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SpotifyTableViewCell", for: indexPath)
         let selectedCell = self.albums[indexPath.row]
         
+        /*
         if let albumCell: SpotifyTableViewCell = cell as? SpotifyTableViewCell {
             albumCell.aTitle.text = selectedCell.albumTitle
             
             return albumCell
         }
-        
+        */
         
      
         
@@ -78,6 +80,7 @@ class SpotifyTableViewController: UITableViewController {
         // Configure the cell...
         //cell.imageView?.image =
         cell.textLabel?.text = selectedCell.albumTitle
+      
         return cell
     }
     
