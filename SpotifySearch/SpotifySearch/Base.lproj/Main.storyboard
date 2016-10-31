@@ -29,13 +29,13 @@
                                                 <constraint firstAttribute="width" constant="75" id="qcV-y1-5sU"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Album Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMs-CO-Td2">
-                                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Album Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMs-CO-Td2">
+                                            <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKW-OV-kjx">
-                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -68,6 +68,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="Oiq-vq-1Lt"/>
                     </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="EbR-jU-fN8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                 </tableViewController>
@@ -87,7 +88,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_cover" translatesAutoresizingMaskIntoConstraints="NO" id="OcO-hw-5iK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_cover" translatesAutoresizingMaskIntoConstraints="NO" id="OcO-hw-5iK">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="jle-n8-aZy"/>
                                 </constraints>
@@ -103,7 +104,7 @@
                             <constraint firstAttribute="trailing" secondItem="OcO-hw-5iK" secondAttribute="trailing" id="44H-ak-qaO"/>
                             <constraint firstItem="rC8-Vv-SsL" firstAttribute="leading" secondItem="73F-YS-x5t" secondAttribute="leadingMargin" constant="10" id="ETE-GB-taF"/>
                             <constraint firstItem="OcO-hw-5iK" firstAttribute="leading" secondItem="73F-YS-x5t" secondAttribute="leading" id="TsM-B5-U6M"/>
-                            <constraint firstItem="OcO-hw-5iK" firstAttribute="top" secondItem="ADU-VZ-EJc" secondAttribute="bottom" id="h9u-y4-H8y"/>
+                            <constraint firstItem="OcO-hw-5iK" firstAttribute="top" secondItem="ADU-VZ-EJc" secondAttribute="bottom" constant="10" id="h9u-y4-H8y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rC8-Vv-SsL" secondAttribute="trailing" constant="10" id="svs-Ek-4Ct"/>
                             <constraint firstItem="rC8-Vv-SsL" firstAttribute="top" secondItem="OcO-hw-5iK" secondAttribute="bottom" constant="10" id="wLH-uh-wu6"/>
                         </constraints>
@@ -122,7 +123,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yfN-60-zFh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xhV-q5-Niz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xhV-q5-Niz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
