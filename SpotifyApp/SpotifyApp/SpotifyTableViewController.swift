@@ -20,7 +20,7 @@ class SpotifyTableViewController: UITableViewController {
         super.viewDidLoad()
         self.getAlbums(from: AlbumEndpoint)
     }
-    
+     
     func getAlbums(from apiEndpoint: String) { // <<< returns Void
         if let validAlbumEndpoint: URL = URL(string: apiEndpoint) {
             
