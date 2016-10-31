@@ -11,19 +11,18 @@ import UIKit
 class SpotifyTableViewController: UITableViewController {
     internal var albums = [Album]()
     internal var images = [String]()
-    internal let randStrings = ["hi", "there"]
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SpotifyManager.manager.getAlbumData(album: "jazz") {  (data: Data?) in
+        SpotifyManager.manager.getAlbumData {  (data: Data?) in
             if data != nil {
-                
                 if let album = Album.getAlbum(from: data!) {
                     self.albums = album
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
-                    
+                        //print(self.albums.count)
                     }
                 }
                 

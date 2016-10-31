@@ -12,8 +12,8 @@ internal class SpotifyManager {
     static let manager: SpotifyManager = SpotifyManager()
     private init() {}
     
-    func getAlbumData(album: String, completion: @escaping ((Data?) -> Void)) {
-        guard let url = URL(string: "https://api.spotify.com/v1/search?q=\(album)&type=album&limit=50") else {return}
+    func getAlbumData(completion: @escaping ((Data?) -> Void)) {
+        guard let url = URL(string: "https://api.spotify.com/v1/search?q=blue&type=album&limit=50") else {return}
         
         let session = URLSession.init(configuration: .default)
         session.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
