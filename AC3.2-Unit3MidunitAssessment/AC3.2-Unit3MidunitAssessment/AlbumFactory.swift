@@ -9,7 +9,7 @@
 import Foundation
 
 enum SpotifyAlbumParseError: Error {
-    case results
+    case results(json: Any)
     case name(jsonObject: AnyObject)
     case image(jsonObject: AnyObject)
     case artist(jsonObject: AnyObject)
@@ -23,7 +23,7 @@ class AlbumFactory {
             // Cast from Any and check for the "albums" key
             guard let firstDict = spotifyJSONData as? [String: Any],
                 let dictOfAlbums = firstDict["albums"] as? [String: Any],
-                let arrayOfAlbumDicts = dictOfAlbums["items"] as? [[String: Any]] else { throw SpotifyAlbumParseError.results }
+                let arrayOfAlbumDicts = dictOfAlbums["items"] as? [[String: Any]] else { throw SpotifyAlbumParseError.results(json: spotifyJSONData) }
             print("11111111111 got an array of album dicts")
             
             var allTheAlbums: [Album] = []

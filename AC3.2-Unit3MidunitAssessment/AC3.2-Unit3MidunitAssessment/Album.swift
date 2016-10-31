@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class Album {
     let albumName: String
     let artistName: String
@@ -21,8 +20,14 @@ class Album {
     }
 }
 
-struct SetOfImages {
+class SetOfImages {
     let thumnail: String
     let medium: String
     let full: String
+    
+    init(thumnail: String, medium: String, full: String) {
+        self.thumnail = thumnail
+        self.medium = medium
+        self.full = full
+    }
 }

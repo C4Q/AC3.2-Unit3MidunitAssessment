@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class SearchManager: SearchSettingsDelegate  {
     
     static let manager = SearchManager()
@@ -16,6 +15,8 @@ class SearchManager: SearchSettingsDelegate  {
     
     var searchString: String = "https://api.spotify.com/v1/search?q=blue&type=album&limit=50"
     var searchWord: String = "blue"
+    var numberOfResults = "50"
+    
     var searchTitle: String {
         let searchWords = searchWord.replacingOccurrences(of: "%20", with: " ")
         let titleArray = searchWords.components(separatedBy: " ")
@@ -27,7 +28,6 @@ class SearchManager: SearchSettingsDelegate  {
         searchTitle = String(searchTitle.characters.dropLast(1))
         return searchTitle
     }
-    var numberOfResults = "50"
     
     func updateSearch(newSearchWord: String, numberOfResults: String) {
         self.searchString = "https://api.spotify.com/v1/search?q=\(newSearchWord)&type=album&limit=\(numberOfResults)"

@@ -52,9 +52,13 @@ class AlbumsTableViewController: UITableViewController {
         let thisAlbum = albums[indexPath.row]
         cell.textLabel?.text = thisAlbum.albumName
         
-        APIHelper.manager.downloadImage(urlString: thisAlbum.Images.thumnail) { (returnedData: Data) in
+        APIHelper.manager.getData(endPoint: thisAlbum.Images.thumnail) { (returnedData: Data?) in
+            guard let validData = returnedData else { return }
             DispatchQueue.main.async {
-                cell.imageView?.image = UIImage(data: returnedData)
+                cell.imageView?.image = UIImage(data: validData)
+                //this content mode stuff doesn' work in this default cell, make a custom cell.
+                cell.imageView?.contentMode = .scaleAspectFill
+                cell.imageView?.clipsToBounds = true
                 cell.setNeedsLayout()
             }
         }

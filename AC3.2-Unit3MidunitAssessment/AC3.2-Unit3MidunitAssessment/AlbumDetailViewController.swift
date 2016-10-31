@@ -24,9 +24,10 @@ class AlbumDetailViewController: UIViewController {
         navigationItem.title = thisAlbum.albumName
         albumInfoLabel.text = ("Album Name: \(thisAlbum.albumName)\nby: \(thisAlbum.artistName)")
         
-        APIHelper.manager.downloadImage(urlString: thisAlbum.Images.full) { (returnedData: Data) in
+        APIHelper.manager.getData(endPoint: thisAlbum.Images.full) { (returnedData: Data?) in
+            guard let validData = returnedData else { return }
             DispatchQueue.main.async {
-                self.albumCoverImageView.image = UIImage(data: returnedData)
+                self.albumCoverImageView.image = UIImage(data: validData)
                 self.view.reloadInputViews()
             }
         }
