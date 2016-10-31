@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mij-na-M0p">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Term-->
+        <scene sceneID="htE-dv-36j">
+            <objects>
+                <tableViewController title="Search Term" id="7P8-kX-9ai" customClass="SpotifyAlbumsTableViewController" customModule="unit3MidUnitAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZSG-C5-S1F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" id="TWE-Bw-KGD" customClass="AlbumTableViewCell" customModule="unit3MidUnitAssessment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TWE-Bw-KGD" id="Hle-XO-4Rs">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vdb-Ul-OKN">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="NWY-lU-8eG"/>
+                                                <constraint firstAttribute="width" constant="32" id="VBp-Hx-oyg"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2g-68-mXI">
+                                            <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="r2g-68-mXI" firstAttribute="leading" secondItem="vdb-Ul-OKN" secondAttribute="trailing" constant="15" id="6yC-AD-d0D"/>
+                                        <constraint firstItem="vdb-Ul-OKN" firstAttribute="centerY" secondItem="Hle-XO-4Rs" secondAttribute="centerY" id="Dam-cz-1ua"/>
+                                        <constraint firstItem="r2g-68-mXI" firstAttribute="centerY" secondItem="Hle-XO-4Rs" secondAttribute="centerY" id="J26-bH-aIx"/>
+                                        <constraint firstItem="vdb-Ul-OKN" firstAttribute="leading" secondItem="Hle-XO-4Rs" secondAttribute="leadingMargin" constant="15" id="QX2-AX-Dbr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="r2g-68-mXI" secondAttribute="trailing" id="nTK-Fb-idZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="albumCoverImageView" destination="vdb-Ul-OKN" id="Qmj-c0-wQi"/>
+                                    <outlet property="albumTitleLabel" destination="r2g-68-mXI" id="FGz-xU-FXy"/>
+                                    <segue destination="Rfq-ke-0eV" kind="show" id="tXa-I5-a9r"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7P8-kX-9ai" id="lns-vq-Tak"/>
+                            <outlet property="delegate" destination="7P8-kX-9ai" id="Ogp-Cg-cbv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="vUC-Jz-WfV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="J3Z-2l-DgR"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5H-vU-BWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093.5999999999999" y="300"/>
+        </scene>
+        <!--Album Title-->
+        <scene sceneID="9nf-5t-xxI">
+            <objects>
+                <viewController title="Album Title" id="Rfq-ke-0eV" customClass="DetailViewController" customModule="unit3MidUnitAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ETu-iR-bkC"/>
+                        <viewControllerLayoutGuide type="bottom" id="L9q-2p-ABC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ycb-OK-cAx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fi9-Kd-PZW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="IYg-ke-zXV"/>
+                                    <constraint firstAttribute="height" constant="300" id="dWO-Dm-8f0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fi9-Kd-PZW" firstAttribute="top" secondItem="ETu-iR-bkC" secondAttribute="bottom" constant="49" id="ABG-34-A4t"/>
+                            <constraint firstItem="Fi9-Kd-PZW" firstAttribute="centerX" secondItem="ycb-OK-cAx" secondAttribute="centerX" id="aJ8-lU-oEe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="largeAlbumCoverImageView" destination="Fi9-Kd-PZW" id="EMF-Yc-yhJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctp-D5-eeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949.5999999999999" y="301.79910044977515"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jhj-7q-7ew">
+            <objects>
+                <navigationController id="mij-na-M0p" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="j6e-Cd-Cri">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7P8-kX-9ai" kind="relationship" relationship="rootViewController" id="1hb-8T-5LY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7F5-gS-Avq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187" y="300"/>
+        </scene>
+    </scenes>
+</document>
