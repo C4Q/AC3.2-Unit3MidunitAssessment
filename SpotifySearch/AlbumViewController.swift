@@ -22,24 +22,20 @@ class AlbumViewController: UIViewController {
     }
     
     func getImage() {
-        let session = URLSession.shared
-        
         guard let validAlbum = album else {
             return
         }
         
-        session.downloadTask(with: validAlbum.images[0].url) { (location, response, error) -> Void in
-            if error != nil {
-                print("Error encountered!: \(error!)")
-            }
-            if let validData = try? Data(contentsOf: location!) {
-                DispatchQueue.main.async {
-                    let img = UIImage(data: validData)
-                    self.imageView.image = img
-                    
+        if (validAlbum.images.count > 0) {
+            APIRequestManager.manager.getData(endPoint: validAlbum.images[0].url.absoluteString ) { (data: Data?) in
+                if  let validData = data,
+                    let validImage = UIImage(data: validData) {
+                    DispatchQueue.main.async {
+                        self.imageView.image = validImage
+                    }
                 }
             }
-            }.resume()
+        }
     }
 
 }

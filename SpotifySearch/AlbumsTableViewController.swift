@@ -10,7 +10,7 @@ import UIKit
 
 class AlbumsTableViewController: UITableViewController {
     var albums: [Album] = []
-    let searchTerm = "blue"
+    let searchTerm = "kanye west"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,12 +52,14 @@ class AlbumsTableViewController: UITableViewController {
         cell.imageView?.image = nil
         
         // make the call to get the correct image
-        APIRequestManager.manager.getData(endPoint: album.images[2].url.absoluteString ) { (data: Data?) in
-            if  let validData = data,
-                let validImage = UIImage(data: validData) {
-                DispatchQueue.main.async {
-                    cell.imageView?.image = validImage
-                    cell.setNeedsLayout()
+        if (album.images.count > 2) {
+            APIRequestManager.manager.getData(endPoint: album.images[2].url.absoluteString ) { (data: Data?) in
+                if  let validData = data,
+                    let validImage = UIImage(data: validData) {
+                    DispatchQueue.main.async {
+                        cell.imageView?.image = validImage
+                        cell.setNeedsLayout()
+                    }
                 }
             }
         }
